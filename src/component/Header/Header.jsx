@@ -1,25 +1,40 @@
 import Logo from '../../assets/header_assets/logo.svg';
-import CartIcon from '../../assets/header_assets/cart.svg';
 import MenuIcon from '../../assets/header_assets/menu.svg';
+import Cart from './Cart';
 import SearchBar from './SearchBar';
 
+import DropDown from './DropDown';
+import Details from './Details';
+
+
+
 const Header = () => {
+
     return (
         <header className='flex-col bg-bgForHeader'>
-            <div className="bg-white p-4 pt-6 flex justify-between items-center">
-                <button className="p-2">
+                <div className="hidden md:flex justify-around items-center bg-gray-100 p-2  text-sm">
+                    <DropDown />
+                    <Details />
+                </div>
+
+            <div className="bg-white p-4 pt-6 md:py-1 flex justify-between md:justify-around items-center">
+                <button className="p-2 md:hidden">
                     <img src={MenuIcon} alt="Menu" className="w-6 h-6" />
                 </button>
                 <div className="flex justify-center">
-                    <img src={Logo} alt="CommerceBooster Logo" className="h-6 w-auto" />
+                    <img src={Logo} alt="CommerceBooster Logo" className="h-6 w-auto md:w-[228px] md:h-[28px]" />
                 </div>
-                <button className="p-2 relative">
-                    <img src={CartIcon} alt="Cart" className=" w-5 h-5 text-indigo-600" />
-                    <span className="absolute w-[12px] h-[12px] top-1 right-0 inline-flex items-center justify-center px-2 py-2 text-xs
-                     text-red-100 text-xss bg-bgForCartPop rounded-full">45</span>
-                </button>
+                <div className="hidden md:flex md:flex-row md:justify-center md:p-4">
+                    <SearchBar />
+                </div>
+                <div className="hidden font-bold md:flex bg-bgForOrderBtn rounded-[30px] md:w-[198px] text-center text-white text-sm py-[16px] px-[32px]">
+                    Quick Order Form
+                </div>
+                <div className="md:hidden lg:hidden">
+                    <Cart />
+                </div>
             </div>
-            <div className="flex flex-row justify-center p-4">
+            <div className="flex flex-row justify-center md:hidden p-4">
                 <SearchBar />
             </div>
         </header>
@@ -29,3 +44,4 @@ const Header = () => {
 
 
 export default Header;
+
