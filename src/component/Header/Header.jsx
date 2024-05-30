@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 
 import DropDown from './DropDown';
 import Details from './Details';
+import MenuBarDesktop from './MenuBarDesktop';
 
 
 
@@ -12,7 +13,7 @@ const Header = () => {
 
     return (
         <header className='flex-col bg-bgForHeader'>
-                <div className="hidden md:flex justify-around items-center bg-gray-100 p-2  text-sm">
+                <div className="hidden md:flex justify-around items-center bg-gray-100 p-2 text-sm">
                     <DropDown />
                     <Details />
                 </div>
@@ -27,7 +28,7 @@ const Header = () => {
                 <div className="hidden md:flex md:flex-row md:justify-center md:p-4">
                     <SearchBar />
                 </div>
-                <div className="hidden font-bold md:flex bg-bgForOrderBtn rounded-[30px] md:w-[198px] text-center text-white text-sm py-[16px] px-[32px]">
+                <div className="hidden font-bold md:flex hover:bg-white hover:text-bgForOrderBtn bg-bgForOrderBtn hover:border-[1px] border-bgForOrderBtn rounded-[30px] md:w-[198px] text-center text-white text-sm py-[16px] px-[32px]">
                     Quick Order Form
                 </div>
                 <div className="md:hidden lg:hidden">
@@ -37,6 +38,8 @@ const Header = () => {
             <div className="flex flex-row justify-center md:hidden p-4">
                 <SearchBar />
             </div>
+            <MenuBarDesktop />
+
         </header>
 
     );
