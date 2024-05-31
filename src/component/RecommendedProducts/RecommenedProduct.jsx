@@ -32,40 +32,19 @@ const RecommenedProduct = () => {
     ];
 
     return (
-        <section>
+        <div>
 
-            <h1 className="text-center pb-1 pt-6 text-[24px] font-bold">Recommended products</h1>
-            <div className="flex p-3">
+            <h1 className="text-center pb-1 pt-4 text-[24px] font-bold">Recommended products</h1>
+            <div className="flex gap-[15px] p-[15px] ">
                 {
                     products.map((product) => (
                         <Cards key={product.id} product={product} />
                     ))
                 }
             </div>
-        </section>
+        </div>
 
     )
 }
 
 export default RecommenedProduct
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

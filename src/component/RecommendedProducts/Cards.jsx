@@ -9,9 +9,9 @@ import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg"
 const Cards = ({product}) => {
     return (
 
-            <div className="bg-white p-1 rounded-lg shadow-sm w-full max-w-xs mx-auto">
+            <div className="bg-white rounded-lg shadow-sm w-full max-w-xs mx-auto">
                 <div className="relative mb-4">
-                    <img src={product.image} alt="Product" className="w-full h-auto rounded-lg" />
+                    <img src={product.image} alt="Product" className="w-full h-auto" />
                     <span className="absolute top-2 left-2 bg-orange-400 text-white text-xs font-bold px-2 py-1 ">{product.discount}</span>
                     <span className="absolute top-2 right-2 bg-gray-300 rounded-full px-1 py-1 ">
                         <img src={favIcon} />
@@ -64,68 +64,3 @@ const Cards = ({product}) => {
 }
 
 export default Cards
-
-
-// const RecommendedProduct = () => {
-// const products = [
-//     {
-//       discount: '-30%',
-//       title: 'Connection with a handle Omnire round',
-//       price: '$45.00',
-//       oldPrice: '$65.00',
-//       availability: 'In stock',
-//       image: 'path/to/image1.jpg'
-//     },
-//     {
-//       discount: '-15%',
-//       title: 'Countertop washbasin GoodHome Tekapo',
-//       price: '$51.00',
-//       oldPrice: '$64.00',
-//       availability: 'In stock',
-//       image: 'path/to/image2.jpg'
-//     },
-//     {
-//       discount: '-15%',
-//       title: 'Perforated Simpson tape 25 x 2500 x 2 mm',
-//       price: '$51.00',
-//       oldPrice: '$64.00',
-//       availability: 'In stock',
-//       image: 'path/to/image3.jpg'
-//     },
-//     {
-//       discount: '-15%',
-//       title: 'AMBER DECOR Bulb 60W, E27 590',
-//       price: '$51.00',
-//       oldPrice: '$64.00',
-//       availability: 'Exp. delivery on Jun 14, 2022',
-//       image: 'path/to/image4.jpg'
-//     },
-//   ];
-
-//   return (
-//     <section className="recommended-products">
-//       <h2 className="section-title">Recommended Products</h2>
-//       <div className="products-container">
-//         {products.map((product, index) => (
-//           <div key={index} className="product-card">
-//             <div className="product-discount">{product.discount}</div>
-//             <img src={product.image} alt={product.title} className="product-image" />
-//             <div className="product-details">
-//               <h3 className="product-title">{product.title}</h3>
-//               <p className="product-price">{product.price} <span className="old-price">{product.oldPrice}</span></p>
-//               <p className={`availability ${product.availability.includes('Exp.') ? 'exp-delivery' : ''}`}>
-//                 {product.availability}
-//               </p>
-//               <button className="add-to-cart">Add to cart</button>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//       <div className="show-more">
-//         <a href="#">Show all recommended products</a>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default RecommendedProduct;
