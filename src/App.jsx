@@ -6,6 +6,7 @@ export default function App() {
     <div>
       <Header />
       <RecommendedProduct />
+      {/* //margin 64 from this component */}
     </div>
   )
 }

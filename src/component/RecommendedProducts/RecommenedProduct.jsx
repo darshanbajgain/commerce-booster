@@ -1,8 +1,8 @@
 import Cards from "./Cards"
 import productImage1 from "../../assets/recommended_section/product-image-1.png";
 import productImage2 from "../../assets/recommended_section/product-image-2.png";
-
-
+import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
+import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
 const RecommenedProduct = () => {
 
     const products = [
@@ -41,6 +41,18 @@ const RecommenedProduct = () => {
                         <Cards key={product.id} product={product} />
                     ))
                 }
+            </div>
+            <div className="relative">
+                <div className="bg-bgForSeacrchBorder rounded-lg absolute -top-5 right-4 w-8 h-8
+                flex flex-col justify-center items-center">
+                    <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
+                </div>
+                <p className=" w-full flex flex-row items-center justify-center text-[14px] text-PhoneColor mt-[20px]">
+                    Show all recommended products 
+                    <span className="mx-[8px]">
+                        <img src={pointRightArrow} className="w-4 h-4" />
+                    </span>
+                </p>
             </div>
         </div>
 

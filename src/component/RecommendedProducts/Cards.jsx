@@ -23,11 +23,11 @@ const Cards = ({ product }) => {
                 <span className="absolute bottom-2 right-2 px-1 py-1 ">
                     <img className="w-[13.5px] h-[14.94px]" src={shareIcon} />
                 </span>
-                <p className="absolute bottom-2 left-2 text-[10px] mt-1 text-green-500">
+                <div className="absolute bottom-2 left-2 text-[10px] mt-1 text-green-500">
                     <div className="flex flex-row space-x-1 items-center justify-between">
                         <span><img className="w-[6.67px] h-[7.11]" src={checkIcon} /></span><span>{product.stockStatus}</span>
                     </div>
-                </p>
+                </div>
             </div>
             <div className="text-gray-500 m-[8px] text-[14px]">
                 {product.partNumber}
