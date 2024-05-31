@@ -1,10 +1,12 @@
 import Cards from "./Cards"
 import productImage1 from "../../assets/recommended_section/product-image-1.png";
 import productImage2 from "../../assets/recommended_section/product-image-2.png";
-import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
+// import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
 import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
+import CommonLink from "../CommonLink/CommonLink";
 const RecommenedProduct = () => {
 
+    //pass products
     const products = [
 
         {
@@ -31,6 +33,9 @@ const RecommenedProduct = () => {
 
     ];
 
+    //pass message
+    const message = "Show all recommended products";
+
     return (
         <div>
 
@@ -47,12 +52,13 @@ const RecommenedProduct = () => {
                 flex flex-col justify-center items-center">
                     <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
                 </div>
-                <p className=" w-full flex flex-row items-center justify-center text-[14px] text-PhoneColor mt-[20px]">
+                {/* <p className=" w-full flex flex-row items-center justify-center text-[14px] text-PhoneColor mt-[20px]">
                     Show all recommended products 
                     <span className="mx-[8px]">
                         <img src={pointRightArrow} className="w-4 h-4" />
                     </span>
-                </p>
+                </p> */}
+                <CommonLink message={message} />
             </div>
         </div>
 
