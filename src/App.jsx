@@ -1,3 +1,4 @@
+import AdvertiseBox from "./component/AdvertiseBox/AdvertiseBox";
 import Header from "./component/Header/Header";
 import RecommendedProduct from "./component/RecommendedProducts/RecommenedProduct";
 
@@ -6,7 +7,7 @@ export default function App() {
     <div>
       <Header />
       <RecommendedProduct />
-      {/* //margin 64 from this component */}
+      <AdvertiseBox/>
     </div>
   )
 }
