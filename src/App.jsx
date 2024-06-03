@@ -1,5 +1,6 @@
 import AdvertiseBox from "./component/AdvertiseBox/AdvertiseBox";
 import Header from "./component/Header/Header";
+import HintSection from "./component/HintSection/HintSection";
 import RecommendedCategory from "./component/RecommendedCategory/RecommendedCategory";
 import RecommendedProduct from "./component/RecommendedProducts/RecommenedProduct";
 
@@ -10,6 +11,7 @@ export default function App() {
       <RecommendedProduct />
       <AdvertiseBox/>
       <RecommendedCategory />
+      <HintSection />
     </div>
   )
 }
