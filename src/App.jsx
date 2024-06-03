@@ -1,3 +1,4 @@
+import AdBoxes from "./component/AdBoxes/AdBoxes";
 import AdvertiseBox from "./component/AdvertiseBox/AdvertiseBox";
 import AdvertiseMiddleBox from "./component/AdvertiseBoxMiddle/AdvertiseMiddleBox";
 import Header from "./component/Header/Header";
@@ -14,6 +15,7 @@ export default function App() {
       <RecommendedCategory />
       <HintSection />
       <AdvertiseMiddleBox />
+      <AdBoxes />
     </div>
   )
 }
