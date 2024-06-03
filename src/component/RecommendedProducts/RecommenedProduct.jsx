@@ -39,7 +39,7 @@ const RecommenedProduct = () => {
     return (
         <div>
 
-            <h1 className="text-center pb-1 pt-4 text-[24px] font-bold">Recommended products</h1>
+            <h1 className="text-center pb-1 pt-6 text-[24px] font-bold">Recommended products</h1>
             <div className="flex gap-[15px] p-[15px] ">
                 {
                     products.map((product) => (
