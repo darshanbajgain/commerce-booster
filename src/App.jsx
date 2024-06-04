@@ -5,6 +5,7 @@ import Header from "./component/Header/Header";
 import HintSection from "./component/HintSection/HintSection";
 import RecommendedCategory from "./component/RecommendedCategory/RecommendedCategory";
 import RecommendedProduct from "./component/RecommendedProducts/RecommenedProduct";
+import ShippingDeliveryUI from "./component/ShippingUI/ShippingDeliveryUI";
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
       <HintSection />
       <AdvertiseMiddleBox />
       <AdBoxes />
+      <ShippingDeliveryUI />
+
     </div>
   )
 }
