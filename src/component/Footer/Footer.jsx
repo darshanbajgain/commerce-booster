@@ -2,9 +2,11 @@ import SignUpCard from "./SignUpCard"
 import FooterItem from "./FooterItem";
 import HowToBuy from "./HowToBuy";
 import OtherDropDowns from "./OtherDropDowns";
+import LogoComponent from "./LogoComponent";
 
 
 const Footer = () => {
+
     return (
         <div className="mt-[64px] bg-bgForSeacrchBorder">
             <SignUpCard />
@@ -16,9 +18,10 @@ const Footer = () => {
                 <FooterItem text="Returns" />
             </HowToBuy>
             <OtherDropDowns title="Help" />
-            <OtherDropDowns title="Service" />
+            <OtherDropDowns title="Services" />
             <OtherDropDowns title="About" />
-            
+            <LogoComponent />
+
         </div>
     )
 }
