@@ -1,11 +1,13 @@
 import EventsCards from "./EventsCards"
+import CommonLink from "../CommonLink/CommonLink"
 import ecCourse from "../../assets/events_assets/electriancourse.png"
 import interiorDesign from "../../assets/events_assets/interiordesign.png"
 import paveEng from "../../assets/events_assets/paveengineering.png"
 import autoCAD from "../../assets/events_assets/autocad.png"
 
-
 const EventsComponent = () => {
+
+    const messageLinkName = "Show all events"
 
     const events = [
         {
@@ -22,7 +24,7 @@ const EventsComponent = () => {
             desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
             image: interiorDesign
         },
-    
+
         {
             id: 3,
             title: "AutoCAD 2d basic level",
@@ -35,22 +37,25 @@ const EventsComponent = () => {
             title: "Paving engineer with a road construction machine licence",
             date_place: "23.05.2021 | London, UK",
             desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
-            image: paveEng 
+            image: paveEng
         },
     ]
 
-  return (
-    <div className="mt-[64px]">
-        <h1 className="text-[24px] font-bold text-center">Events for you</h1>
-        <div className="flex flex-col px-4">
-            {
-                events.map(event => (
-                    < EventsCards event={event} key={event.id} />
-                ))
-            }
+    return (
+        <div className="mt-[64px]">
+            <h1 className="text-[24px] font-bold text-center">Events for you</h1>
+            <div className="flex flex-col px-4">
+                {
+                    events.map(event => (
+                        < EventsCards event={event} key={event.id} />
+                    ))
+                }
+            </div>
+            <div className="mt-1">
+                <CommonLink message={messageLinkName} />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default EventsComponent
