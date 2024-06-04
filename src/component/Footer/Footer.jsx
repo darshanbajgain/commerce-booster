@@ -21,6 +21,9 @@ const Footer = () => {
             <OtherDropDowns title="Services" />
             <OtherDropDowns title="About" />
             <LogoComponent />
+            <div className="h-[259px] bg-white">
+                {/* {empty div} */}
+            </div>
 
         </div>
     )
