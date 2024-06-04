@@ -1,6 +1,6 @@
 const SignUpCard = () => {
     return (
-        <div className="max-w-sm mx-auto border border-gray-200 rounded-lg shadow-md">
+        <div className="max-w-sm mx-auto border border-gray-200 shadow-sm">
             <h2 className="text-[16px] font-bold mx-4 mt-6">Sign up for news</h2>
             <p className="text-[14px] m-4">
                 Keep up to date with the latest product launches and news. Find out more about our brands and get special promo codes.
@@ -17,7 +17,7 @@ const SignUpCard = () => {
                 <button className=" w-[343px] text-[14px] rounded-full bg-bgForOrderBtn text-white px-8 py-4 hover:bg-blue-900 mx-4">
                     Sign up for newsletter
                 </button>
-                <div className="mt-4 flex items-center flex-row">
+                <div className="mt-4 mb-6 flex items-center flex-row">
                     <input
                         type="checkbox"
                         id="data-management"
