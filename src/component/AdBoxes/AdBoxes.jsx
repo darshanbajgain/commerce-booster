@@ -28,9 +28,9 @@ const AdBoxes = () => {
 
             {
                 adObjects.map(ad => (
-                    <div key={ad.id} className="flex bg-yellow-500 flex-row mx-[16px] mt-[8px] rounded-lg">
+                    <div key={ad.id} className="flex bg-orange-500 flex-row mx-[16px] mt-[8px] rounded-lg">
                         <div className=" px-[24px] py-[64px] flex flex-col items-center">
-                            <div className=" w-[124px] h-[62px] text-[16px] flex flex-col justify-center font-bold  ">
+                            <div className=" text-white w-[124px] h-[62px] text-[16px] flex flex-col justify-center font-bold  ">
                                 <p>{ad.toolbarname}</p>
                             </div>
                         </div>

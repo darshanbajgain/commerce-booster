@@ -23,8 +23,8 @@ const SignUpCard = () => {
                         id="data-management"
                         className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
                     />
-                    <label htmlFor="data-management" className="ml-2 text-gray-700">
-                        I accept <a href="#" className="text-blue-500 hover:underline">the personal data management</a>.
+                    <label htmlFor="data-management" className="ml-2 text-[14px] text-gray-700">
+                        I accept <a href="#" className="text-blue-500 hover:underline">the personal data management.</a>
                     </label>
                 </div>
 

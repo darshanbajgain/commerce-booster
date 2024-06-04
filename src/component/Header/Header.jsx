@@ -22,12 +22,12 @@ const Header = () => {
 
             <div className="bg-white px-[16px] pt-[33px] pb-[16px] md:py-1 flex justify-between md:justify-around items-center">
                 <button className="md:hidden">
-                    <img src={MenuIcon} alt="Menu" className="w-[24px] h-[24px]" />
+                    <img src={MenuIcon} alt="Menu" className="w-[24px] h-[28px]" />
                 </button>
                 <div className="flex justify-center items-center">
                     {/* <img src={Logo} alt="CommerceBooster Logo" className="h-6 w-auto md:w-[228px] md:h-[28px]" /> */}
                     <img src={mainLogo} alt="Logo" className="h-6 w-[29.11px] md:w-[228px] md:h-[28px]" />
-                    <img src={secondaryLogo} alt="CommerceBooster" className="h-[12.03px] w-[160.84px] md:w-[228px] md:h-[28px]" />
+                    <img src={secondaryLogo} alt="CommerceBooster" className="ml-1 h-4 w-40 md:w-[228px] md:h-[28px]" />
 
                 </div>
                 <div className="hidden md:flex md:flex-row md:justify-center md:p-4">

@@ -16,7 +16,7 @@ const EventsCards = ({ event }) => {
                         {event.desc}
                     </p>
                 </div>
-                <button className="mx-2 mb-[26px] text-[16px]  text-blue-600 px-8 py-4 border-blue-600 border-2 rounded-full self-start">
+                <button className="mx-2 mb-[26px] text-[14px]  text-blue-600 px-7 py-3 border-blue-600 border-2 rounded-full self-start">
                     Know more
                 </button>
             </div>

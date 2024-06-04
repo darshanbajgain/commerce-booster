@@ -13,7 +13,7 @@ const AdvertiseMiddleBox = () => {
                     Longer sentence, for just two lines and it could be very very long
                 </p>
                 <div className="mt-[24px] flex justify-center">
-                    <button className="bg-white px-[32px] py-[16px] rounded-full text-[14px] font-medium text-bgForOrderBtn">Bundle this buy</button>
+                    <button className="bg-white px-[32px] py-[16px] rounded-full text-[14px] font-medium text-bgForOrderBtn">Buy this bundle</button>
                 </div>
             </div>
 

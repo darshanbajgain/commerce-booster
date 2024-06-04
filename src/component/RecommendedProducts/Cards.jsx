@@ -21,7 +21,7 @@ const Cards = ({ product }) => {
                     <img className="w-[13.5px] h-[16.5px]" src={compareIcon} />
                 </span>
                 <span className="absolute bottom-2 right-2 px-1 py-1 ">
-                    <img className="w-[13.5px] h-[14.94px]" src={shareIcon} />
+                    <img className="w-[14px] h-[15px]" src={shareIcon} />
                 </span>
                 <div className="absolute bottom-2 left-2 text-[10px] mt-1 text-green-500">
                     <div className="flex flex-row space-x-1 items-center justify-between">
@@ -37,7 +37,7 @@ const Cards = ({ product }) => {
             </div>
             <div>
                 <p className=" m-[8px] space-x-2 text-sm font-bold text-bgForOrderBtn">
-                    your price <span className="text-[20px] font-bold">${product.price}</span> net
+                    your price <span className="text-[20px] m-1 font-bold">${product.price}</span> net
                 </p>
                 <span className="text-orange-400 line-through mx-[8px] mt-[4px]">${product.originalPrice} net</span>
             </div>
