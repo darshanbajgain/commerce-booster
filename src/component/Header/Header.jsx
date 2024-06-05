@@ -14,7 +14,7 @@ const Header = () => {
                 <DropDown />
                 <Details />
             </div>
-
+            
             <div className="bg-white lg:px-[44px] lg:h-20  xl:px-[88px] px-4 py-4 lg:py-0 flex justify-between lg:gap-x-24 xl:gap-x-24 items-center">
                 <button className="md:hidden">
                     <img src={MenuIcon} alt="Menu" className="w-6 h-7" />
