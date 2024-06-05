@@ -1,4 +1,4 @@
-import MobileCards from "./MobileCards"
+import Cards from "./Cards"
 import productImage1 from "../../assets/recommended_section/product-image-1.png";
 import productImage2 from "../../assets/recommended_section/product-image-2.png";
 // import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
@@ -35,7 +35,37 @@ const RecommenedProduct = () => {
             price: "51.00",
             originalPrice: "64.00",
             image: productImage2
+        },
+
+        {
+            id: 3,
+            discount: "-30%",
+            stockStatus: "In stock",
+            partNumber: "Omnires | Part No. 2123532",
+            name: "Countertop washbasin GoodHome Tekapo",
+            feat1: "Basin width : 45 cm",
+            feat2: "Basin height: 12 cm",
+            feat3: "Basin depth: 35 cm",
+            price: "51.00",
+            originalPrice: "64.00",
+            image: productImage2
+        },
+
+        {
+            id: 4,
+            discount: "-30%",
+            stockStatus: "In stock",
+            partNumber: "Omnires | Part No. 2123532",
+            name: "Countertop washbasin GoodHome Tekapo",
+            feat1: "Basin width : 45 cm",
+            feat2: "Basin height: 12 cm",
+            feat3: "Basin depth: 35 cm",
+            price: "51.00",
+            originalPrice: "64.00",
+            image: productImage2
         }
+    
+        
 
     ];
 
@@ -49,7 +79,7 @@ const RecommenedProduct = () => {
             <div className="flex justify-between gap-[15px] p-[15px] lg:p-0 ">
                 {
                     products.map((product) => (
-                        <MobileCards key={product.id} product={product} />
+                        <Cards key={product.id} product={product} />
                     ))
                 }
             </div>

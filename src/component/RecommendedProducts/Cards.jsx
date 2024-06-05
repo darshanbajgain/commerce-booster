@@ -6,7 +6,7 @@ import arrowDown from "../../assets/recommended_section/arrowdown.svg";
 import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg"
 
 
-const MobileCards = ({ product }) => {
+const Cards = ({ product }) => {
 
     return (
 
@@ -72,4 +72,4 @@ const MobileCards = ({ product }) => {
     )
 }
 
-export default MobileCards
+export default Cards
