@@ -33,7 +33,7 @@ const Cards = ({ product }) => {
                 {product.partNumber}
             </div>
             <div className="text-wrap m-[8px]">
-                <h3 className="text-[16px] font-bold">{product.name}</h3>
+                <h3 className="text-[16px] lg:text-[20px] font-bold">{product.name}</h3>
             </div>
             <ul className="hidden my-3 mx-2 md:flex flex-col">
                 <li className="mb-1">{product.feat1}</li>
@@ -45,7 +45,7 @@ const Cards = ({ product }) => {
                     your price <span className="text-[20px] m-1 font-bold">${product.price}</span> net
                     <span className="hidden lg:inline-block text-orange-400 line-through mx-[8px] mt-[4px]">${product.originalPrice} net</span>
                 </p>
-                <span className="lg:hidden text-orange-400 line-through mx-[8px] mt-[4px]">${product.originalPrice} net</span>
+                <span className="lg:hidden text-orange-400 line-through mx-[8px] mt-[4px] lg:text-[16px]">${product.originalPrice} net</span>
             </div>
             <div className="flex flex-col items-center">
                 <div className="flex mt-[8px] items-center space-x-2 w-full">

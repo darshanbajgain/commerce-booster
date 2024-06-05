@@ -4,7 +4,10 @@ import productImage2 from "../../assets/recommended_section/product-image-2.png"
 // import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
 import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
 import CommonLink from "../CommonLink/CommonLink";
+import { useEffect, useState } from "react";
 const RecommenedProduct = () => {
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     //pass products
     const products = [
@@ -64,31 +67,52 @@ const RecommenedProduct = () => {
             originalPrice: "64.00",
             image: productImage2
         }
-    
-        
+
 
     ];
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Determine the number of cards to display
+    const cardsToDisplay = windowWidth < 1024 ? products.slice(0, 2) : products;
+
 
     //pass message
     const message = "Show all recommended products";
 
     return (
-        <div className="lg:px-[84px]">
+        <div className="flex flex-col lg:px-[88px] relative">
 
-            <h1 className="text-center lg:text-left pb-1 pt-6 text-[24px] font-bold lg:mb-[34px]">Recommended products</h1>
-            <div className="flex justify-between gap-[15px] p-[15px] lg:p-0 ">
+            <div className="hidden lg:block absolute right-24 top-2">
+                <CommonLink message={message} />
+            </div>
+            <div className="hidden lg:flex flex-col justify-center items-center 
+                 bg-bgForSeacrchBorder rounded-lg absolute top-96 right-16 w-8 h-8">
+                <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
+            </div>
+
+            <h1 className="text-center lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <div className="flex justify-between gap-[15px] p-[15px] lg:p-0 overflow-hidden">
                 {
-                    products.map((product) => (
-                        <Cards key={product.id} product={product} />
-                    ))
+                    cardsToDisplay.map(
+                        (product) => (
+                            <Cards key={product.id} product={product} />
+                        )
+                    )
                 }
             </div>
             <div className="relative">
                 <div className="bg-bgForSeacrchBorder rounded-lg absolute -top-5 right-4 w-8 h-8
-                flex flex-col justify-center items-center">
+                flex flex-col justify-center items-center lg:hidden">
                     <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
                 </div>
-                <CommonLink message={message} />
+                <div className="lg:hidden">
+                    <CommonLink message={message} />
+                </div>
             </div>
         </div>
 
