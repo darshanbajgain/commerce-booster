@@ -46,7 +46,7 @@ const RecommenedProduct = () => {
         <div className="lg:px-[84px]">
 
             <h1 className="text-center lg:text-left pb-1 pt-6 text-[24px] font-bold lg:mb-[34px]">Recommended products</h1>
-            <div className="flex gap-[15px] p-[15px] lg:p-0 ">
+            <div className="flex justify-between gap-[15px] p-[15px] lg:p-0 ">
                 {
                     products.map((product) => (
                         <MobileCards key={product.id} product={product} />
