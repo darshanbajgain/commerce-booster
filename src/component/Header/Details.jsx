@@ -5,12 +5,12 @@ import DropDownLogo from "../../assets/header_assets/arrowdown.svg";
 
 const Details = () => {
     return (
-        <div className="flex space-x-4">
-            <div className='flex items-center space-x-1'>
-                <img src={PhoneLogo} alt="Phone" className="w-4 h-4" />
+        <div className="flex gap-x-4">
+            <div className='flex items-center'>
+                <img src={PhoneLogo} alt="Phone" className="w-4 h-4 mr-[5px]" />
                 <span className='text-PhoneColor font-bold'>+32 (0) 16 29 76 67</span>
             </div>
-            <div className="flex items-center space-x-1 ">
+            <div className="flex items-center">
                 <span className=" border-l border-black h-[28px]"></span>
                 <div className="relative py-2 px-4">
                     <img src={MailLogo} alt="Messages" className="w-6 h-6" />
@@ -20,14 +20,14 @@ const Details = () => {
                 <span>Messages</span>
             </div>
 
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center">
                 <span className=" border-l border-black h-[28px]"></span>
-                <div className="flex items-center bg-gray-100 border-none focus:outline-none text-sm py-2 px-4">
-                    <img src={UserLogo} alt="User" className="w-6 h-6" />
-                    <select className="appearance-none bg-transparent border-none focus:outline-none text-sm p-1 pr-2">
+                <div className="flex items-center text-sm">
+                    <img src={UserLogo} alt="User" className="w-6 h-6 ml-4 my-[6px] mr-1" />
+                    <select className="appearance-none bg-transparent text-sm">
                         <option>Username Surname</option>
                     </select>
-                    <img src={DropDownLogo} alt="Dropdown Arrow" className="w-4 h-4" />
+                    <img src={DropDownLogo} alt="Dropdown Arrow" className="mx-[6px] my-[8px] w-[12px] h-[7.41px]" />
                 </div>
             </div>
         </div>
