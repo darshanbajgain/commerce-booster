@@ -77,36 +77,50 @@ const RecommenedProduct = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Determine the number of cards to display
-    const cardsToDisplay = windowWidth < 1024 ? products.slice(0, 2) : products;
+    // Determine the number of cards to display accroding to device size
+    let cardsToDisplay;
+    if (windowWidth < 1024) {
+        cardsToDisplay = products.slice(0, 2);
+    } else if (windowWidth < 1400) {
+        cardsToDisplay = products.slice(0, 3);
+    } else {
+        cardsToDisplay = products;
+    }
 
 
     //pass message
     const message = "Show all recommended products";
 
     return (
-        <div className="flex flex-col lg:px-[88px] relative">
+        <div className="flex flex-col items-center relative">
 
             <div className="hidden lg:block absolute right-24 top-2">
                 <CommonLink message={message} />
             </div>
+
+            {/*slider fo large device */}
             <div className="hidden lg:flex flex-col justify-center items-center 
                  bg-bgForSeacrchBorder rounded-lg absolute top-96 right-16 w-8 h-8">
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
-            <h1 className="text-center lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
-            <div className="flex justify-between gap-[15px] p-[15px] lg:p-0 overflow-hidden">
-                {
-                    cardsToDisplay.map(
-                        (product) => (
-                            <Cards key={product.id} product={product} />
+
+            <div className="container lg:mx-[88px] ">
+                <h1 className="text-center lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+                <div className="flex justify-around gap-[15px] p-[15px] lg:p-0 ">
+                    {
+                        cardsToDisplay.map(
+                            (product) => (
+                                <Cards key={product.id} product={product} />
+                            )
                         )
-                    )
-                }
+                    }
+                </div>
             </div>
+
             <div className="relative">
-                <div className="bg-bgForSeacrchBorder rounded-lg absolute -top-5 right-4 w-8 h-8
+                {/*slider fo mobile device */}
+                <div className="bg-bgForSeacrchBorder rounded-lg absolute bottom-4 -right-12 md:-right-20 w-8 h-8
                 flex flex-col justify-center items-center lg:hidden">
                     <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
                 </div>
