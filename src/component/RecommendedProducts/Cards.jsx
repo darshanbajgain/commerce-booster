@@ -1,31 +1,47 @@
+
+import { useState } from "react";
 import favIcon from "../../assets/recommended_section/star.svg";
 import compareIcon from "../../assets/recommended_section/compare.svg";
-import shareIcon from "../../assets/recommended_section/share.svg"
+import shareIcon from "../../assets/recommended_section/share.svg";
 import checkIcon from "../../assets/recommended_section/check.svg";
+import checkBlueIcon from "../../assets/recommended_section/check-blue.svg";
+import cautionRed from "../../assets/recommended_section/cautionred.png";  // Import caution image
 import arrowDown from "../../assets/recommended_section/arrowdown.svg";
-import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg"
-
+import arrowDownBlue from "../../assets/recommended_section/arrowndownblue.svg";
+import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg";
 
 const Cards = ({ product }) => {
+    const [isAddedToCart, setIsAddedToCart] = useState(false);
+
+    const handleAddToCart = () => {
+        if (!product.expiry) {
+            setIsAddedToCart(true);
+        }
+    };
 
     return (
-
         <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]">
-            <div className=" min-[450px]:w-[164px] min-[450px]:h-[134px] md:w-full md:h-auto relative">
+            <div className="min-[450px]:w-[164px] min-[450px]:h-[134px] md:w-full md:h-auto relative">
                 <img src={product.image} alt="Product" className="w-full" />
-                <span className="absolute top-2 left-0 bg-orange-400 text-white text-[10px] font-bold p-[4px] flex items-center justify-center ">{product.discount}</span>
-                <span className="absolute top-2 right-2 bg-gray-300 rounded-full px-1 py-1 ">
+                <span className="absolute top-2 left-0 bg-orange-400 text-white text-[10px] font-bold p-[4px] flex items-center justify-center">
+                    {product.discount}
+                </span>
+                <span className="absolute top-2 right-2 bg-gray-300 rounded-full px-1 py-1">
                     <img src={favIcon} className="w-[12px] h-[12px] lg:w-[21px] lg:h-[21px]" />
                 </span>
-                <span className="absolute bottom-[31px] right-2 px-1 py-1 ">
+                <span className="absolute bottom-[31px] right-2 px-1 py-1">
                     <img className="w-[13.5px] h-[16.5px] lg:w-[18px] lg:h-[22px]" src={compareIcon} />
                 </span>
-                <span className="absolute bottom-2 right-2 px-1 py-1 ">
+                <span className="absolute bottom-2 right-2 px-1 py-1">
                     <img className="w-[14px] h-[15px] lg:w-[18px] lg:h-[19px]" src={shareIcon} />
                 </span>
-                <div className="absolute bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 text-green-500">
-                    <div className="flex flex-row space-x-1 items-center justify-between">
-                        <span><img className="w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px]" src={checkIcon} /></span><span>{product.stockStatus}</span>
+                <div className={`absolute bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 shadow-sm px-[8px] py-[2px] rounded-md ${product.expiry ? 'text-red-500' : 'text-green-500'}`}>
+                    <div className="flex w-full flex-row space-x-1 items-center justify-between">
+                        <span>
+                            <img className={`w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px] ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
+                            <img className={`w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px] ${product.expiry ? 'inline-block' : 'hidden'}`} src={cautionRed} />
+                        </span>
+                        <span>{product.expiry ? product.expiry : product.stockStatus}</span>
                     </div>
                 </div>
             </div>
@@ -53,23 +69,40 @@ const Cards = ({ product }) => {
                         <span className="text-[14px]">1</span>
                     </div>
                     <div className="relative">
-                        <div className="bg-white border border-gray-300 rounded-lg  flex items-center justify-between cursor-pointer px-[16px] py-[12px]">
-                            <span className="text-[14px] lg:w-[171px] ">Item</span>
-                            <div className="px-[8px] py-[6px] ml-[8px] ">
+                        <div className="bg-white border border-gray-300 rounded-lg flex items-center justify-between cursor-pointer px-[16px] py-[12px]">
+                            <span className="text-[14px] lg:w-[171px]">Item</span>
+                            <div className="px-[8px] py-[6px] ml-[8px]">
                                 <img src={blueArrowDown} alt="Arrow Down" className="w-[12px] h-[7.41px]" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <button className="mt-[8px] mb-2 font-sm px-6 py-2 bg-blue-500 text-white rounded-3xl
-                                 w-full flex flex-row items-center justify-center space-x-1">
-                    <span className="p-1 text-[14px]" >Add to cart</span>
-                    <span className="p-1 "><img className="text-white" src={arrowDown} /></span>
+                <button
+                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 py-2 rounded-3xl w-full flex 
+                    flex-row items-center justify-center  space-x-1 
+                    ${isAddedToCart ? 'hidden' : 'flex'}
+                    ${product.expiry ? 'bg-white text-blue-500 border-blue-500 border-2' : 'bg-blue-500 text-white hover:bg-blue-400'}`}
+                    onClick={handleAddToCart}
+                >
+                    <span className="p-1 text-[14px]">Add to cart</span>
+                    <span className="p-1">
+                        <img className={`${product.expiry ? 'hidden' : 'block'}`} src={arrowDown} />
+                        <img className={`${product.expiry ? 'block' : 'hidden'}`} src={arrowDownBlue} />
+                    </span>
+                </button>
+                <button
+                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 py-2 bg-blue-500 text-white rounded-3xl w-full flex flex-row items-center justify-center hover:bg-blue-400 space-x-1 ${isAddedToCart ? 'block' : 'hidden'}`}
+                >
+                    <span className="p-1 text-[14px]">Update Cart</span>
+                    <span className="p-1"><img className="text-white" src={arrowDown} /></span>
                 </button>
             </div>
-
+            <div className={`bg-blue-100 rounded-b-lg py-2 w-full flex flex-row gap-x-1 m-0 justify-center items-center ${isAddedToCart ? 'flex' : 'hidden'}`}>
+                <img className="w-[13.3px h-[13.3px]" src={checkBlueIcon} />
+                <span className="text-blue-500 text-[14px] my-1">Added to cart</span>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Cards
+export default Cards;

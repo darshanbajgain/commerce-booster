@@ -58,6 +58,7 @@ const RecommenedProduct = () => {
             id: 4,
             discount: "-30%",
             stockStatus: "In stock",
+            expiry: "Exp. delivery on Jun 14, 2022",
             partNumber: "Omnires | Part No. 2123532",
             name: "Countertop washbasin GoodHome Tekapo",
             feat1: "Basin width : 45 cm",
