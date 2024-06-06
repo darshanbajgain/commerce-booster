@@ -105,8 +105,8 @@ const RecommenedProduct = () => {
             </div>
 
 
-            <div className="container xl:mx-[88px] ">
-                <h1 className="text-center lg:text-left pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <div className="container xl:mx-[96px] flex flex-col lg:px-[2%]">
+                <h1 className="text-center lg:px-[2%] lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
                 <div className="flex justify-around gap-[15px] p-[15px] lg:p-0 ">
                     {
                         cardsToDisplay.map(

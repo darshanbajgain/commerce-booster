@@ -6,7 +6,7 @@ import CommonLink from "../CommonLink/CommonLink";
 
 const RecommendedCategory = () => {
   const linkmessage = "Show all categories";
-  
+
   const electricProducts = [
     {
       id: "1",
@@ -30,13 +30,16 @@ const RecommendedCategory = () => {
     }
   ]
   return (
-    <div className="flex flex-col items-center mt-16">
-      <h1 className="font-bold text-[24px] mb-6">Recommended categories</h1>
-      <div className="grid grid-cols-2 gap-4 mx-[16px]">
+    <div className="flex flex-col  mt-16 relative">
+      <div className="hidden lg:block absolute right-20 top-2">
+        <CommonLink message={linkmessage} />
+      </div>
+      <h1 className="lg:mx-[88px] font-bold text-center text-[24px] lg:text-[28px] mb-6 lg:text-left">Recommended categories</h1>
+      <div className="lg:mx-[88px] grid grid-cols-2 lg:grid-cols-4 gap-4 mx-[16px]">
         {
           electricProducts.map((product) => (
-            <div key={product.id} className="flex justify-center flex-col items-center rounded-lg shadow-lg bg-bgForOrderBtn">
-              <img src={product.image} alt={product.name} className="w-[164px] h-[164px] object-center " />
+            <div key={product.id} className="flex max-w-[301px] max-h-[375px] justify-center flex-col items-center shadow-sm rounded-lg bg-bgForOrderBtn">
+              <img src={product.image} alt={product.name} className="w-full object-center " />
               <div className="w-full h-14 flex flex-col items-center justify-center">
                 <span className="font-bold text-white text-center">{product.name}</span>
               </div>
@@ -44,7 +47,7 @@ const RecommendedCategory = () => {
           ))
         }
       </div>
-      <div className="mt-1">
+      <div className="mt-1 lg:hidden">
         <CommonLink message={linkmessage} />
       </div>
     </div>
