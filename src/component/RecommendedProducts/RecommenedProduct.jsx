@@ -29,7 +29,7 @@ const RecommenedProduct = () => {
             id: 2,
             discount: "-30%",
             stockStatus: "In stock",
-            partNumber: "Omnires | Part No. 2123532",
+            partNumber: "GoodHome | Part No. 2123532",
             name: "Countertop washbasin GoodHome Tekapo",
             feat1: "Basin width : 45 cm",
             feat2: "Basin height: 12 cm",
@@ -43,14 +43,14 @@ const RecommenedProduct = () => {
             id: 3,
             discount: "-30%",
             stockStatus: "In stock",
-            partNumber: "Omnires | Part No. 2123532",
-            name: "Countertop washbasin GoodHome Tekapo",
+            partNumber: "GoodHome | Part No. 2123532",
+            name: "Perforated Simpson tape 25 x 2500 x 2 mm",
             feat1: "Basin width : 45 cm",
             feat2: "Basin height: 12 cm",
             feat3: "Basin depth: 35 cm",
             price: "51.00",
             originalPrice: "64.00",
-            image: productImage2
+            image: productImage1
         },
 
         {
@@ -59,13 +59,13 @@ const RecommenedProduct = () => {
             stockStatus: "In stock",
             expiry: "Exp. delivery on Jun 14, 2022",
             partNumber: "Omnires | Part No. 2123532",
-            name: "Countertop washbasin GoodHome Tekapo",
+            name: "AMBER DECOR Bulb 60W,   E27 590",
             feat1: "Basin width : 45 cm",
             feat2: "Basin height: 12 cm",
             feat3: "Basin depth: 35 cm",
             price: "51.00",
             originalPrice: "64.00",
-            image: productImage2
+            image: productImage1
         }
 
 
@@ -100,13 +100,13 @@ const RecommenedProduct = () => {
 
             {/*slider fo large device */}
             <div className="hidden lg:flex flex-col justify-center items-center 
-                 bg-bgForSeacrchBorder rounded-lg absolute top-96 right-16 w-8 h-8">
+                 bg-bgForSeacrchBorder rounded-lg absolute top-96 right-10 w-8 h-8">
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
 
-            <div className="container lg:mx-[88px] ">
-                <h1 className="text-center lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <div className="container xl:mx-[88px] ">
+                <h1 className="text-center lg:text-left pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
                 <div className="flex justify-around gap-[15px] p-[15px] lg:p-0 ">
                     {
                         cardsToDisplay.map(

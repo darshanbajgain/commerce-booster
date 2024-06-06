@@ -35,7 +35,7 @@ const Cards = ({ product }) => {
                 <span className="absolute bottom-2 right-2 px-1 py-1">
                     <img className="w-[14px] h-[15px] lg:w-[18px] lg:h-[19px]" src={shareIcon} />
                 </span>
-                <div className={`absolute bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 shadow-sm px-[8px] py-[2px] rounded-md ${product.expiry ? 'text-red-500' : 'text-green-500'}`}>
+                <div className={`absolute bg-white bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 shadow-sm px-[8px] py-[2px] rounded-md ${product.expiry ? 'text-red-500' : 'text-green-500'}`}>
                     <div className="flex w-full flex-row space-x-1 items-center justify-between">
                         <span>
                             <img className={`w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px] ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
