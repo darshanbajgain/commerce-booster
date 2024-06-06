@@ -78,10 +78,10 @@ const Cards = ({ product }) => {
                     </div>
                 </div>
                 <button
-                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 py-2 rounded-3xl w-full flex 
+                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 rounded-3xl w-full
                     flex-row items-center justify-center  space-x-1 
                     ${isAddedToCart ? 'hidden' : 'flex'}
-                    ${product.expiry ? 'bg-white text-blue-500 border-blue-500 border-2' : 'bg-blue-500 text-white hover:bg-blue-400'}`}
+                    ${product.expiry ? 'bg-white text-blue-500 border-blue-500 border-2 py-2' : 'bg-blue-500 text-white hover:bg-blue-400 py-2 '}`}
                     onClick={handleAddToCart}
                 >
                     <span className="p-1 text-[14px]">Add to cart</span>
@@ -97,7 +97,7 @@ const Cards = ({ product }) => {
                     <span className="p-1"><img className="text-white" src={arrowDown} /></span>
                 </button>
             </div>
-            <div className={`bg-blue-100 rounded-b-lg py-2 w-full flex flex-row gap-x-1 m-0 justify-center items-center ${isAddedToCart ? 'flex' : 'hidden'}`}>
+            <div className={`bg-blue-100 rounded-b-lg py-2 w-full flex-row gap-x-1 m-0 justify-center items-center ${isAddedToCart ? 'flex' : 'hidden'}`}>
                 <img className="w-[13.3px h-[13.3px]" src={checkBlueIcon} />
                 <span className="text-blue-500 text-[14px] my-1">Added to cart</span>
             </div>
