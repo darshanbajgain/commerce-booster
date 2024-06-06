@@ -1,7 +1,6 @@
 import Cards from "./Cards"
 import productImage1 from "../../assets/recommended_section/product-image-1.png";
 import productImage2 from "../../assets/recommended_section/product-image-2.png";
-// import pointRightArrow from "../../assets/recommended_section/rightarrow.svg"
 import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
 import CommonLink from "../CommonLink/CommonLink";
 import { useEffect, useState } from "react";
