@@ -1,3 +1,4 @@
+
 import CommonLink from "../CommonLink/CommonLink"
 import HintsCards from "./HintsCards";
 import img1 from "../../assets/hints_assests/image.png";
@@ -24,7 +25,7 @@ const HintSection = () => {
         },
         {
             id: 3,
-            title: "What color to paint a hall in a block of flats? ",
+            title: "What color to paint a hall in a block of flats?",
             description: "Matching the right paint is a real challenge. If you are wondering what color to paint your hall with, you can...",
             image: img3
         },
@@ -37,23 +38,23 @@ const HintSection = () => {
     ]
 
     return (
-        <div className="flex flex-col mt-[64px] relative">
-            <div className="hidden lg:block absolute right-20 top-2">
+        <div className="flex flex-col mt-16 relative">
+            <div className="hidden lg:block absolute right-20 -top-2">
                 <CommonLink message={messageLink} /> 
             </div>
-            <h1 className="lg:mx-[88px] font-bold text-[24px] text-center lg:text-left">Hints for you</h1>
-            <div className="lg:mx-[88px] flex flex-col lg:flex-row lg:gap-x-5 px-4 lg:px-0 mb-1">
+            <h1 className="lg:mx-20 font-bold text-2xl text-center lg:text-left">Hints for you</h1>
+            <div className="grid grid-cols-1 gap-4 px-4 lg:px-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-1">
                 {
                     hints.map((hint) => (
                         <HintsCards key={hint.id} hint={hint} />
                     ))
                 }
             </div>
-            <div className="lg:hidden text-left">
+            <div className="lg:hidden text-left px-4">
                 <CommonLink message={messageLink} />
             </div>
         </div>
     )
 }
 
-export default HintSection
+export default HintSection;
