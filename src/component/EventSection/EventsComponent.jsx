@@ -42,16 +42,20 @@ const EventsComponent = () => {
     ]
 
     return (
-        <div className="mt-[64px]">
-            <h1 className="text-[24px] font-bold text-center">Events for you</h1>
-            <div className="flex flex-col px-4">
+        <div className="mt-[64px] relative">
+            <div className="hidden lg:block absolute right-20 -top-4">
+                <CommonLink message={messageLinkName} />
+            </div>
+
+            <h1 className="text-[24px] font-bold text-center lg:text-start lg:px-[88px]">Events for you</h1>
+            <div className="flex flex-col lg:flex-row px-4 lg:px-[88px] lg:gap-x-5">
                 {
                     events.map(event => (
                         < EventsCards event={event} key={event.id} />
                     ))
                 }
             </div>
-            <div className="mt-1">
+            <div className="mt-1 lg:hidden">
                 <CommonLink message={messageLinkName} />
             </div>
         </div>

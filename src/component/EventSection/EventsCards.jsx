@@ -4,15 +4,15 @@ const EventsCards = ({ event }) => {
         <div className=" bg-white border border-gray-200 
         rounded-lg shadow-sm mt-4 flex flex-col">
             <img
-                className="w-full h-48 object-cover md:w-1/3"
+                className="w-full h-48 object-cover"
                 src={event.image}
                 alt={event.title}
             />
             <div className="flex flex-col justify-between">
-                <div className="text-[16px]">
-                    <h2 className=" mt-4 mx-2  font-bold mb-4">{event.title}</h2>
-                    <p className="mx-2 text-blue-500 mb-4">{event.date_place}</p>
-                    <p className="mx-2 text-gray-700 mb-4">
+                <div className="text-[16px] ">
+                    <h2 className=" mt-4 mx-2  font-bold mb-4 lg:text-[20px]">{event.title}</h2>
+                    <p className="mx-2 text-blue-500 mb-4 text-[14px]">{event.date_place}</p>
+                    <p className="mx-2 text-gray-800 mb-4">
                         {event.desc}
                     </p>
                 </div>
