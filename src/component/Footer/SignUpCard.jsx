@@ -1,7 +1,7 @@
 const SignUpCard = () => {
     return (
-        <div className="max-w-sm mx-auto border border-gray-200 shadow-sm">
-            <h2 className="text-[16px] font-bold mx-4 mt-6">Sign up for news</h2>
+        <div className="max-w-sm mx-auto lg:mx-0 border border-gray-200 lg:border-none shadow-sm lg:mt-6 lg:shadow-none">
+            <h2 className="text-[16px] lg:text-[20px] font-bold mx-4 mt-6 lg:mt-0 ">Sign up for news</h2>
             <p className="text-[14px] m-4">
                 Keep up to date with the latest product launches and news. Find out more about our brands and get special promo codes.
             </p>
