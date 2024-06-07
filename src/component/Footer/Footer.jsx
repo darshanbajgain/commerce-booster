@@ -43,6 +43,10 @@ const Footer = () => {
                 </OtherDropDowns>
             </div>
 
+            <div className="hidden lg:block border border-gray-300 px-[88px]  mt-5">
+
+            </div>
+
             <LogoComponent />
 
 
