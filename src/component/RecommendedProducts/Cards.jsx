@@ -20,8 +20,8 @@ const Cards = ({ product }) => {
     };
 
     return (
-        <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]">
-            <div className="min-[450px]:w-[164px] min-[450px]:h-[134px] md:w-full md:h-auto relative">
+        <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]  transform transition-transform duration-300 ease-in-out hover:scale-105 ">
+            <div className=" md:w-full md:h-auto relative">
                 <img src={product.image} alt="Product" className="w-full" />
                 <span className="absolute top-2 left-0 bg-orange-400 text-white text-[10px] font-bold p-[4px] flex items-center justify-center">
                     {product.discount}
