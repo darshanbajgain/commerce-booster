@@ -1,7 +1,7 @@
 
 const EventsCards = ({ event }) => {
     return (
-        <div className=" bg-white border border-gray-200 
+        <div className=" bg-white border border-gray-200  lg:border-none
         rounded-lg shadow-sm mt-4 flex flex-col">
             <img
                 className="w-full h-48 object-cover"

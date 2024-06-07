@@ -42,16 +42,16 @@ const EventsComponent = () => {
     ]
 
     return (
-        <div className="mt-[64px] relative">
+        <div className="mt-16 relative">
             <div className="hidden lg:block absolute right-20 -top-4">
                 <CommonLink message={messageLinkName} />
             </div>
 
-            <h1 className="text-[24px] font-bold text-center lg:text-start lg:px-[88px]">Events for you</h1>
-            <div className="flex flex-col lg:flex-row px-4 lg:px-[88px] lg:gap-x-5">
+            <h1 className="text-2xl font-bold text-center lg:text-start lg:px-20">Events for you</h1>
+            <div className="grid grid-cols-1 gap-4 px-4 lg:px-20 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                 {
                     events.map(event => (
-                        < EventsCards event={event} key={event.id} />
+                        <EventsCards event={event} key={event.id} />
                     ))
                 }
             </div>
