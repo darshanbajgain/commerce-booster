@@ -2,7 +2,7 @@
 const EventsCards = ({ event }) => {
     return (
         <div className=" bg-white border border-gray-200  lg:border-none
-        rounded-lg shadow-sm mt-4 flex flex-col">
+        rounded-lg shadow-sm mt-4 flex flex-col transform transition-transform duration-300 ease-in-out hover:scale-105">
             <img
                 className="w-full h-48 object-cover"
                 src={event.image}
@@ -16,7 +16,7 @@ const EventsCards = ({ event }) => {
                         {event.desc}
                     </p>
                 </div>
-                <button className="mx-2 mb-[26px] text-[14px]  text-blue-600 px-7 py-3 border-blue-600 border-2 rounded-full self-start">
+                <button className="mx-2 mb-[26px] text-[14px]  text-blue-600 px-7 py-3 border-blue-600 hover:text-gray-500 hover:border-gray-500 border-2 rounded-full self-start">
                     Know more
                 </button>
             </div>

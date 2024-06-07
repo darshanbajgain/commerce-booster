@@ -6,7 +6,7 @@ const HintsCards = ({hint}) => {
     const readlink = "Read more";
     
     return (
-        <div className="mt-6 shadow-sm rounded-sm">
+        <div className="mt-6 shadow-sm rounded-sm transform transition-transform duration-300 ease-in-out hover:scale-105">
             <div className="flex flex-col">
                 <img src={hint.image} />
                 <div>
@@ -14,7 +14,8 @@ const HintsCards = ({hint}) => {
                     <p className="px-2">{hint.description}</p>
                 </div>
             </div>
-            <p className=" w-full px-2 py-4 font-medium flex flex-row items-center jus text-[14px] text-PhoneColor mb-2">
+            <p className=" w-full px-2 py-4 font-medium flex flex-row items-center jus text-[14px] text-PhoneColor mb-2
+             hover:text-gray-500 cursor-pointer">
                 {readlink}
                 <span className="mx-[8px]">
                     <img src={pointRightArrow} className="w-4 h-4" />

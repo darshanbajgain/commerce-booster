@@ -14,7 +14,8 @@ const AdvertiseBox = () => {
         </div>
       </div>
       <div className="mt-[24px] lg:mt-0">
-        <button className=" bg-white px-[32px] py-[16px] rounded-full text-[14px] font-medium text-bgForOrderBtn">Check offer</button>
+        <button className=" bg-white px-[32px] py-[16px] rounded-full text-[14px] font-medium text-bgForOrderBtn
+        transform transition-transform duration-300 ease-in-out hover:scale-105 ">Check offer</button>
       </div>
     </div>
   )

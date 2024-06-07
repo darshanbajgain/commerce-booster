@@ -34,11 +34,12 @@ const RecommendedCategory = () => {
       <div className="hidden lg:block absolute right-20 top-2">
         <CommonLink message={linkmessage} />
       </div>
-      <h1 className="lg:mx-[88px] font-bold text-center text-[24px] lg:text-[28px] mb-6 lg:text-left">Recommended categories</h1>
-      <div className="lg:mx-[88px] grid grid-cols-2 lg:grid-cols-4 gap-4 mx-[16px]">
+      <h1 className="md:mx-[88px] font-bold text-center text-[24px] lg:text-[28px] mb-6 lg:text-left">Recommended categories</h1>
+      <div className="md:mx-[88px] grid grid-cols-2 lg:grid-cols-4 gap-4 mx-[16px]">
         {
           electricProducts.map((product) => (
-            <div key={product.id} className="flex max-w-[301px] max-h-[375px] justify-center flex-col items-center shadow-sm rounded-lg bg-bgForOrderBtn">
+            <div key={product.id} className="flex max-w-[301px] max-h-[375px] justify-center flex-col items-center shadow-sm rounded-lg bg-bgForOrderBtn
+            transform transition-transform duration-300 ease-in-out hover:scale-105 ">
               <img src={product.image} alt={product.name} className="w-full object-center " />
               <div className="w-full h-14 flex flex-col items-center justify-center">
                 <span className="font-bold text-white text-center">{product.name}</span>
