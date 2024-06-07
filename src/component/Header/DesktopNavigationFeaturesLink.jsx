@@ -1,6 +1,6 @@
-import CartIcon from "../../assets/header_assets/Vector.svg";
 import CompareIcon from "../../assets/header_assets/compare.svg";
 import FavoritesIcon from "../../assets/header_assets/star.svg";
+import Cart from "./Cart";
 
 const DesktopNavigationFeaturesLink = () => {
     return (
@@ -20,11 +20,12 @@ const DesktopNavigationFeaturesLink = () => {
                 <span className=" text-PhoneColor mt-1 font-[600]">FAVORITES</span>
             </div>
             <div className="flex flex-col items-center w-[116px] relative">
-                <div className="relative">
+                {/* <div className="relative">
                     <img src={CartIcon} alt="Cart" className="w-4 h-4" />
                     <span className="absolute -top-3 -right-2 text-[10px] bg-bgForCartPop w-[18px] h-[18px] flex flex-col items-center rounded-full text-white ">45</span>
-                </div>
-                <span className="text-PhoneColor mt-2 text-center font-[600]">CART</span>
+                </div> */}
+                <Cart />
+                <span className="text-PhoneColor mt-0 text-center font-[600]">CART</span>
                 <span className="text-PhoneColor text-center absolute -bottom-4 right-1 text-[14px]">Add Cart Name</span>
             </div>
         </div>
