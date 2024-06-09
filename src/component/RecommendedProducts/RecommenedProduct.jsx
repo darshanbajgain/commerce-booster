@@ -92,21 +92,22 @@ const RecommenedProduct = () => {
     const message = "Show all recommended products";
 
     return (
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center lg:grid grid-cols-1  relative lg:mx-[88px] ">
 
             <div className="hidden lg:block absolute right-24 top-2">
                 <CommonLink message={message} />
             </div>
 
-            {/*slider fo large device */}
+            {/*slider  fo large device */}
             <div className="hidden lg:flex flex-col justify-center items-center z-10 hover:bg-gray-500 
                  bg-bgForSeacrchBorder rounded-lg absolute top-96 right-10 w-8 h-8">
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
+            <h1 className="lg:text-left text-center pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
 
-            <div className="container xl:mx-[96px] flex flex-col lg:px-[2%] lg:h-[716px]">
-                <h1 className="text-center lg:px-[2%] lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <div className="container flex flex-col lg:h-[716px]">
+
                 <div className="flex justify-around gap-[15px] p-[15px] lg:p-0 ">
                     {
                         cardsToDisplay.map(
