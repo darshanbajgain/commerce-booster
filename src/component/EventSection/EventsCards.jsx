@@ -12,7 +12,14 @@ const EventsCards = ({ event }) => {
                 <div className="text-[16px] ">
                     <h2 className=" mt-4 mx-2  font-bold mb-4 lg:text-[20px]">{event.title}</h2>
                     <p className="mx-2 text-blue-500 mb-4 text-[14px]">{event.date_place}</p>
-                    <p className="mx-2 text-gray-800 mb-4">
+                    <p className="mx-2 text-gray-800 mb-4"
+                    style={{ overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2, /* Number of lines to show before truncating */
+                        WebkitBoxOrient: 'vertical',
+                        maxHeight: '52px', /* Ensuring it doesn't exceed the height */
+                        lineHeight: '1.2em', /* Adjust this according to your line height */}}>
                         {event.desc}
                     </p>
                 </div>

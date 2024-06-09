@@ -14,25 +14,25 @@ const HintSection = () => {
         {
             id: 1,
             title: "How much does it cost to finish an apartment?",
-            description: "Are you standing on the threshold of your own \"M\", to which you have just picked up the keys, and with the eye...",
+            description: "Are you standing on the threshold of your own \"M\", to which you have just picked up the keys, and with the eye hy hello how are you what to do in this bla bla testing ellipisi",
             image: img1
         },
         {
             id: 2,
             title: "Demolition of the load-bearing wall",
-            description: "Are you planning a home renovation or renovation? Your vision is limited by the load-bearing wall, which you...",
+            description: "Are you planning a home renovation or renovation? Your vision is limited by the load-bearing wall, which you",
             image: img2
         },
         {
             id: 3,
             title: "What color to paint a hall in a block of flats?",
-            description: "Matching the right paint is a real challenge. If you are wondering what color to paint your hall with, you can...",
+            description: "Matching the right paint is a real challenge. If you are wondering what color to paint your hall with, you can",
             image: img3
         },
         {
             id: 4,
             title: "How does a concrete pump work?",
-            description: "A concrete pump is currently one of the most common equipment used on construction sites. Its operation...",
+            description: "A concrete pump is currently one of the most common equipment used on construction sites. Its operation",
             image: img4
         },
     ]
