@@ -5,7 +5,7 @@ import compareIcon from "../../assets/recommended_section/compare.svg";
 import shareIcon from "../../assets/recommended_section/share.svg";
 import checkIcon from "../../assets/recommended_section/check.svg";
 import checkBlueIcon from "../../assets/recommended_section/check-blue.svg";
-import cautionRed from "../../assets/recommended_section/cautionred.png"; 
+import cautionRed from "../../assets/recommended_section/cautionred.png";
 import arrowDown from "../../assets/recommended_section/arrowdown.svg";
 import arrowDownBlue from "../../assets/recommended_section/arrowndownblue.svg";
 import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg";
@@ -48,9 +48,36 @@ const Cards = ({ product }) => {
             <div className="text-gray-500 m-[8px] text-[14px]">
                 {product.partNumber}
             </div>
-            <div className="text-wrap m-[8px]">
-                <h3 className="text-[16px] lg:text-[20px] font-bold">{product.name}</h3>
+            <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px] lg:w-[285px]">
+                <h3 className="card-name text-[16px] lg:text-[20px] font-bold"
+                    style={{
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        display: '-webkit-box',
+                        WebkitBoxOrient: 'vertical',
+                        lineHeight: '1.2em',
+                    }}
+                >
+                    {product.name}
+                </h3>
+                <style jsx>{`
+        @media (min-width: 728px) {
+             .card-name {
+                -webkit-line-clamp: 2; /* Number of lines to show before truncating */
+                max-height: 52px; /* For desktop, 2 lines assuming line-height is 1.2em */
+             
+            }
+        }
+          @media (max-width: 728px) {
+             .card-name {
+                -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+                max-height: 63px; /* For desktop, 2 lines assuming line-height is 1.2em */
+             
+            }
+        }
+    `}</style>
             </div>
+
             <ul className="hidden my-3 mx-2 md:flex flex-col">
                 <li className="mb-1">{product.feat1}</li>
                 <li className="mb-1">{product.feat2}</li>

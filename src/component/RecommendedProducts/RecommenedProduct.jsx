@@ -16,7 +16,7 @@ const RecommenedProduct = () => {
             discount: "-30%",
             stockStatus: "In stock",
             partNumber: "Omnires | Part No. 2123532",
-            name: "Connection with a handle Omnire round",
+            name: "Connection with a handle Omnire round, best product, best buy example text long example text to test dot dot feature",
             feat1: "Material of execution: brass",
             feat2: "Manufacturer`s color: chrome",
             feat3: "Guarantee: 5 years",
@@ -99,13 +99,13 @@ const RecommenedProduct = () => {
             </div>
 
             {/*slider fo large device */}
-            <div className="hidden lg:flex flex-col justify-center items-center 
+            <div className="hidden lg:flex flex-col justify-center items-center z-10 hover:bg-gray-500 
                  bg-bgForSeacrchBorder rounded-lg absolute top-96 right-10 w-8 h-8">
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
 
-            <div className="container xl:mx-[96px] flex flex-col lg:px-[2%]">
+            <div className="container xl:mx-[96px] flex flex-col lg:px-[2%] lg:h-[716px]">
                 <h1 className="text-center lg:px-[2%] lg:text-start pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
                 <div className="flex justify-around gap-[15px] p-[15px] lg:p-0 ">
                     {
