@@ -31,7 +31,7 @@ const RecommendedCategory = () => {
   ]
   return (
     <div className="flex flex-col  mt-16 relative">
-      <div className="hidden lg:block absolute right-20 top-2">
+      <div className="hidden lg:block absolute right-20 top-0">
         <CommonLink message={linkmessage} />
       </div>
       <h1 className="md:mx-[88px] font-bold text-center text-[24px] lg:text-[28px] mb-6 lg:text-left">Recommended categories</h1>
