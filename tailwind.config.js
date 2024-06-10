@@ -5,6 +5,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {
       colors: {
@@ -18,7 +19,7 @@ export default {
         PhoneColor: '#1071FF',
         instock: '#00893A',
         addToCartBtn: '#1071FF',
-
+        adBox: '#2580FF',
       },
       fontSize: {
         xss: '10px'
