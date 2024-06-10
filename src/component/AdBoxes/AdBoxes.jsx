@@ -25,12 +25,10 @@ const AdBoxes = () => {
         }
     ]
     return (
-        <div className="flex flex-col items-center justify-center mt-[64px] md:grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-3
-        gap-x-5 lg:mx-[88px]">
+        <div className="flex flex-col items-center justify-center mt-[64px]  md:grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 lg:mx-[88px] gap-x-5">
 
             {
                 adObjects.map(ad => (
-                    // 
                     <AdCard key={ad.id} ad={ad} />
                 ))
             }

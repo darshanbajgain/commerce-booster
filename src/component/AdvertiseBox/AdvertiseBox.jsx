@@ -1,7 +1,5 @@
 import drillMachine from "../../assets/advertisement_assests/drill.png";
-
 const AdvertiseBox = () => {
-
   return (
     <div className="bg-adBox mt-[64px] px-[16px] py-[24px] lg:py-[16px] lg:px-[88px] flex lg:flex-row lg:justify-between flex-col items-center">
       <div className="flex flex-col lg:flex-row items-center justify-center">

@@ -46,7 +46,7 @@ const Cards = ({ product }) => {
                     </div>
                 </div>
             </div>
-            <div className="text-gray-500 m-[8px] text-[14px] lg:h-6 h-[48px]">
+            <div className="text-gray-500 m-[8px] text-[14px] ">
                 {product.partNumber}
             </div>
             <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px] lg:w-[285px]">
