@@ -4,6 +4,7 @@ import productImage2 from "../../assets/recommended_section/product-image-2.png"
 import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
 import CommonLink from "../CommonLink/CommonLink";
 import { useEffect, useState } from "react";
+
 const RecommenedProduct = () => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -94,17 +95,17 @@ const RecommenedProduct = () => {
     return (
         <div className="flex flex-col items-center lg:grid grid-cols-1  relative lg:mx-[88px] ">
 
-            <div className="hidden lg:block absolute right-24 top-2">
+            <div className="hidden lg:block absolute -right-8 top-2">
                 <CommonLink message={message} />
             </div>
 
             {/*slider  fo large device */}
             <div className="hidden lg:flex flex-col justify-center items-center z-10 hover:bg-gray-500 
-                 bg-bgForSeacrchBorder rounded-lg absolute top-96 right-10 w-8 h-8">
+                 bg-bgForSeacrchBorder rounded-lg absolute top-96 -right-6 w-8 h-8">
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
-            <h1 className="lg:text-left text-center pb-1 pt-6 text-[24px] lg:text-[28px] font-bold lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <h1 className="lg:text-left text-center pb-1 pt-6 text-[24px] lg:text-[28px] font-[700] lg:mt-3 lg:mb-[34px]">Recommended products</h1>
 
             <div className="container flex flex-col lg:h-[716px]">
 

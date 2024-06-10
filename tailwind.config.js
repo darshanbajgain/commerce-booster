@@ -12,8 +12,13 @@ export default {
         bgForCartPop: '#FF4E00',
         bgForOrderBtn: '#1071FF',
         bgForSeacrchBorder: '#EAECEE',
+        cardStarColor: '#E6EFFB;',
+        cardDiscountColor: '#FF7E27',
         bgForMessageNotifaction: '#FF7E27',
         PhoneColor: '#1071FF',
+        instock: '#00893A',
+        addToCartBtn: '#1071FF',
+
       },
       fontSize: {
         xss: '10px'

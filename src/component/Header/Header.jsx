@@ -10,7 +10,7 @@ import MenuBarDesktop from './MenuBarDesktop';
 const Header = () => {
     return (
         <header className='flex flex-col bg-bgForHeader'>
-            <div className="hidden lg:flex justify-between items-center bg-gray-100 py-2 lg:px-[44px] xl:px-[88px] text-sm">
+            <div className="hidden lg:flex justify-between items-center py-2 lg:px-[44px] xl:px-[88px] text-sm">
                 <DropDown />
                 <Details />
             </div>
@@ -25,8 +25,8 @@ const Header = () => {
                 <div className="hidden lg:flex lg:flex-row lg:justify-center lg:my-4">
                     <SearchBar />
                 </div>
-                <div className="hidden font-bold lg:flex justify-center items-center hover:bg-white hover:text-bgForOrderBtn my-4 bg-bgForOrderBtn hover:border border-bgForOrderBtn rounded-full 
-                text-[12px] text-center text-white lg:w-44 xl:text-sm xl:w-48 py-4 px-8">
+                <div className="hidden font-[500] lg:flex justify-center items-center hover:bg-white hover:text-bgForOrderBtn my-4 bg-bgForOrderBtn hover:border border-bgForOrderBtn rounded-full 
+                 text-center text-white h-[48px] text-[16px]  py-4 px-8">
                     Quick Order Form
                 </div>
                 <div className="lg:hidden">
@@ -39,6 +39,6 @@ const Header = () => {
             <MenuBarDesktop />
         </header>
     );
-};
+}
 
 export default Header;
