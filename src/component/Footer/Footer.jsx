@@ -8,8 +8,8 @@ import LogoComponent from "./LogoComponent";
 const Footer = () => {
 
     return (
-        <div className="mt-[64px] bg-bgForSeacrchBorder lg:px-[88px] pt-[8px]">
-            <div className="flex flex-col lg:flex-row lg:justify-around">
+        <div className="mt-[64px] bg-bgForFooter lg:px-[88px] pt-[8px]">
+            <div className="flex flex-col lg:flex-row gap-x-16">
                 <SignUpCard />
                 <div className="lg:grid lg:grid-cols-2 xl:grid-cols-4">
                     <HowToBuy title="How to buy">
@@ -46,7 +46,7 @@ const Footer = () => {
 
             </div>
 
-            <div className="hidden lg:block border border-gray-300 px-[88px]  mt-5">
+            <div className="hidden lg:block border-t border-footerBorder px-[88px]  mt-5">
 
             </div>
 

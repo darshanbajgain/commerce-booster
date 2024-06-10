@@ -20,6 +20,8 @@ export default {
         instock: '#00893A',
         addToCartBtn: '#1071FF',
         adBox: '#2580FF',
+        bgForFooter: '#F6F8FB',
+        footerBorder: '#EAECEE',
       },
       fontSize: {
         xss: '10px'

@@ -14,14 +14,14 @@ const EventsComponent = () => {
             id: 1,
             title: "Electrician course for electricians with SEP licence",
             date_place: "23.05.2021 | London, UK",
-            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
+            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online and testing overlfow text three dots shown",
             image: ecCourse
         },
         {
             id: 2,
             title: "Interior design and decoration",
             date_place: "04-06.11.2021 | London, UK",
-            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
+            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online",
             image: interiorDesign
         },
 
@@ -29,14 +29,14 @@ const EventsComponent = () => {
             id: 3,
             title: "AutoCAD 2d basic level",
             date_place: "23.05.2021 | London, UK",
-            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
+            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online",
             image: autoCAD
         },
         {
             id: 4,
             title: "Paving engineer with a road construction machine licence",
             date_place: "23.05.2021 | London, UK",
-            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online...",
+            desc: "This course is conducted in the form of lectures via the Internet and ends with an examination, also online",
             image: paveEng
         },
     ]
