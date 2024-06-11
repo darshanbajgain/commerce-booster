@@ -42,7 +42,7 @@ const HintSection = () => {
             <div className="hidden lg:block absolute right-20 -top-2">
                 <CommonLink message={messageLink} /> 
             </div>
-            <h1 className="lg:mx-20 font-bold text-2xl text-center lg:text-left">Hints for you</h1>
+            <h1 className="lg:mx-20 font-baiserCircle font-bold text-2xl text-center lg:text-left">Hints for you</h1>
             <div className="grid grid-cols-1 gap-4 px-4 lg:px-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-1">
                 {
                     hints.map((hint) => (

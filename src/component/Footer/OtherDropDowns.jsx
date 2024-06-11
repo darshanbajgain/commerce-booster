@@ -12,7 +12,7 @@ const OtherDropDowns = ({ title, children }) => {
             <div className=" flex flex-row justify-between items-center"
                 onClick={() => setIsOpen(!isOpen)}>
                 <h3
-                    className="font-bold cursor-pointer text-[16px]  lg:text-[20px]"
+                    className="font-bold font-baiserCircle cursor-pointer text-[16px]  lg:text-[20px]"
                 >
                     {title}
                 </h3>

@@ -10,8 +10,8 @@ const HintsCards = ({ hint }) => {
             <div className="flex flex-col">
                 <img src={hint.image} />
                 <div>
-                    <h3 className="font-bold py-4 px-2">{hint.title}</h3>
-                    <p className="px-2 text-justify"
+                    <h3 className="font-bold font-baiserCircle py-4 px-2">{hint.title}</h3>
+                    <p className="px-2 text-wrap"
                         style={{
                             overflow: 'hidden',
                             textOverflow: 'ellipsis',

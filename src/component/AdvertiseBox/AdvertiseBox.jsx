@@ -6,10 +6,10 @@ const AdvertiseBox = () => {
         <div className="flex items-center justify-center">
           <img className="w-[64px] h-[80px] lg:w-[113px] lg:h-[140px]" src={drillMachine} />
         </div>
-        <div className="flex lg:ml-[40px] items-center justify-center text-[48px] lg:text-[80px] text-white font-bold">
+        <div className="flex font-baiserCircle lg:ml-[40px] items-center justify-center text-[48px] lg:text-[80px] text-white font-bold">
           -20%
         </div>
-        <div className="flex text-[36px] lg:text-[46px] lg:ml-[16px] text-white font-bold justify-center">
+        <div className="flex font-baiserCircle text-[36px] lg:text-[46px] lg:ml-[16px] text-white font-bold justify-center">
           on power tools
         </div>
       </div>

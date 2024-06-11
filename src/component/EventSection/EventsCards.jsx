@@ -10,7 +10,7 @@ const EventsCards = ({ event }) => {
             />
             <div className="flex flex-col justify-between">
                 <div className="text-[16px] ">
-                    <h2 className=" mt-4 mx-2  font-bold mb-4 lg:text-[20px]">{event.title}</h2>
+                    <h2 className=" mt-4 mx-2 font-baiserCircle  font-bold mb-4 lg:text-[20px]">{event.title}</h2>
                     <p className="mx-2 text-bgForOrderBtn mb-4 text-[14px]">{event.date_place}</p>
                     <p className="mx-2 text-gray-900 mb-4 w-[285px] h-auto"
                     style={{ overflow: 'hidden',

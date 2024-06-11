@@ -50,7 +50,7 @@ const Cards = ({ product }) => {
                 {product.partNumber}
             </div>
             <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px] lg:w-[285px]">
-                <h3 className="card-name text-[16px] lg:text-[20px] font-bold"
+                <h3 className="card-name font-baiserCircle text-[16px] lg:text-[20px] font-bold"
                     style={{
                         overflow: 'hidden',
                         textOverflow: 'ellipsis',

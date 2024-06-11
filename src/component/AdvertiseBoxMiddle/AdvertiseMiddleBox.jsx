@@ -9,7 +9,7 @@ const AdvertiseMiddleBox = () => {
             </div>
             <div className="bg-bgForOrderBtn flex flex-col px-4 py-10 gap-[10px] justify-center rounded-md md:w-1/2 md:mx-0 lg:mx-0 sm:px-6 sm:py-8">
                 <div className=" mx-0 lg:mx-[64px]">
-                    <div className="flex justify-start text-[24px] sm:text-[25px] md:text-[26px] lg:text-[28px] text-white font-bold mb-4">
+                    <div className="flex justify-start text-[24px] sm:text-[25px] md:text-[26px] lg:text-[28px] text-white font-baiserCircle font-bold mb-4">
                         Buy this bundle and save $100!
                     </div>
                     <p className="text-white text-[18px] sm:text-[18.5px] md:text-[19px] lg:text-[20px]  md:max-w-[300px] lg:max-w-[344px]">
