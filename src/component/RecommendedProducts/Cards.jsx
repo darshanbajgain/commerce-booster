@@ -24,7 +24,7 @@ const Cards = ({ product }) => {
         <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]  transform transition-transform duration-300 ease-in-out hover:scale-105 ">
             <div className=" md:w-full md:h-auto relative">
                 <img src={product.image} alt="Product" className="w-full" />
-                <span className="absolute top-2 left-0 bg-cardDiscountColor text-white text-[10px] font-bold p-[4px] flex items-center justify-center">
+                <span className="absolute top-2 left-0 bg-cardDiscountColor text-white text-[10px] lg:text-[14px] font-[400] lg:font-[600] p-[4px] flex items-center justify-center">
                     {product.discount}
                 </span>
                 <span className="absolute top-2 right-2 bg-cardStarColor rounded-full px-1 py-1">
@@ -39,8 +39,8 @@ const Cards = ({ product }) => {
                 <div className={`absolute bg-white bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 shadow-sm px-[8px] py-[2px] rounded-md ${product.expiry ? 'text-red-500' : 'text-instock'}`}>
                     <div className="flex w-full flex-row space-x-1 items-center justify-between">
                         <span>
-                            <img className={`w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px] ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
-                            <img className={`w-[6.67px] h-[7.11] lg:w-[13.3px] lg:h-[13.3px] ${product.expiry ? 'inline-block' : 'hidden'}`} src={cautionRed} />
+                            <img className={`w-[6.67px] h-[7.11] lg:w-[16px] lg:h-auto ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
+                            <img className={`w-[6.67px] h-[7.11] lg:w-[16px] lg:h-auto ${product.expiry ? 'inline-block' : 'hidden'}`} src={cautionRed} />
                         </span>
                         <span>{product.expiry ? product.expiry : product.stockStatus}</span>
                     </div>
@@ -107,22 +107,22 @@ const Cards = ({ product }) => {
                     </div>
                 </div>
                 <button
-                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 rounded-3xl w-full
+                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 rounded-3xl w-full font-baiserSquare
                     flex-row items-center justify-center  space-x-1 
                     ${isAddedToCart ? 'hidden' : 'flex'}
-                    ${product.expiry ? 'bg-white text-addToCartBtn border-addToCartBtn border-2 py-2' : 'bg-addToCartBtn text-white hover:bg-blue-400 py-2 '}`}
+                    ${product.expiry ? 'bg-white text-addToCartBtn border-addToCartBtn border-2 py-2 font-[400]' : 'bg-addToCartBtn text-white hover:bg-blue-400 py-2 '}`}
                     onClick={handleAddToCart}
                 >
-                    <span className="p-1 text-[14px]">Add to cart</span>
+                    <span className="p-1 text-[14px]  lg:text-[16px] font-baiserSquare ">Add to cart</span>
                     <span className="p-1">
                         <img className={`${product.expiry ? 'hidden' : 'block'}`} src={arrowDown} />
                         <img className={`${product.expiry ? 'block' : 'hidden'}`} src={arrowDownBlue} />
                     </span>
                 </button>
                 <button
-                    className={`mt-[8px] mb-2 text-sm font-[500] px-6 py-2 bg-addToCartBtn text-white rounded-3xl w-full flex flex-row items-center justify-center hover:bg-blue-400 space-x-1 ${isAddedToCart ? 'block' : 'hidden'}`}
+                    className={`mt-[8px] mb-2 text-sm lg:text-[16px] font-[500] font-baiserSquare px-6 py-2 bg-addToCartBtn text-white rounded-3xl w-full flex flex-row items-center justify-center hover:bg-blue-400 space-x-1 ${isAddedToCart ? 'block' : 'hidden'}`}
                 >
-                    <span className="p-1 text-[14px]">Update Cart</span>
+                    <span className="p-1 text-[14px]  lg:text-[16px] ">Update Cart</span>
                     <span className="p-1"><img className="text-white" src={arrowDown} /></span>
                 </button>
             </div>
