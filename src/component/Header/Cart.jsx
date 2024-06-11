@@ -9,7 +9,7 @@ const Cart = () => {
         // </button>
         <button className="relative">
             <img src={CartIcon} alt="Cart" className="w-5 h-5" />
-            <span className="absolute -top-2 -right-2 text-[10px] bg-bgForCartPop w-[16px] h-[16px] flex flex-col items-center rounded-full text-white ">45</span>
+            <span className="absolute -top-2 -right-2 text-[10px] bg-bgForCartPop w-[16px] h-[16px] flex flex-col items-center  rounded-full text-white ">45</span>
         </button>
     )
 }
