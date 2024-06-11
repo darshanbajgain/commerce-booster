@@ -14,7 +14,7 @@ const SignUpCard = () => {
             </div>
             <div className="flex flex-col items-center">
 
-                <button className=" w-[343px] text-[14px] rounded-full bg-bgForOrderBtn text-white px-8 py-4 hover:bg-blue-900 mx-4">
+                <button className=" w-[343px] text-[14px] font-[500] lg:text-[16px] leading-4 rounded-full bg-bgForOrderBtn text-white px-8 py-4 hover:bg-blue-900 mx-4">
                     Sign up for newsletter
                 </button>
 
@@ -23,7 +23,7 @@ const SignUpCard = () => {
                 <input
                     type="checkbox"
                     id="data-management"
-                    className="h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-blue-500 focus:accent-blue-500 border-blue-500"
                 />
                 <label htmlFor="data-management" className="ml-2 text-[14px] text-gray-700">
                     I accept <a href="#" className="text-blue-500 hover:underline">the personal data management.</a>

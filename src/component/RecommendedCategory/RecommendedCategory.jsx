@@ -42,7 +42,7 @@ const RecommendedCategory = () => {
             transform transition-transform duration-300 ease-in-out hover:scale-105 ">
               <img src={product.image} alt={product.name} className="w-full object-center " />
               <div className="w-full h-14 flex flex-col items-center justify-center">
-                <span className="font-bold font-baiserCircle text-white text-center">{product.name}</span>
+                <span className="font-bold xl:text-[20px] lg:text-[16px] md:text-[16px] font-baiserCircle text-white text-center">{product.name}</span>
               </div>
             </div>
           ))

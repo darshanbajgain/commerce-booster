@@ -9,7 +9,7 @@ const ShippingDeliveryUI = () => {
                     Choose DPD for speed, ease and convenience.<br className="lg:hidden" />
                     Track your parcel in real time. This will help you plan your work while waiting for the parcel.
                 </p>
-                <button className="bg-blue-600 text-white text-[14px] lg:text-[16px] px-8 py-4 rounded-full hover:bg-blue-700 max-w-[149px]
+                <button className="bg-blue-600 text-white font-baiserSquare text-[14px] font-[500] leading-4 lg:text-[16px] px-8 py-4 rounded-full hover:bg-blue-700 max-w-[149px]
                 transform transition-transform duration-300 ease-in-out hover:scale-105">
                     Show more
                 </button>

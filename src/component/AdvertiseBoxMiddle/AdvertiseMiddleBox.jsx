@@ -15,8 +15,8 @@ const AdvertiseMiddleBox = () => {
                     <p className="text-white text-[18px] sm:text-[18.5px] md:text-[19px] lg:text-[20px]  md:max-w-[300px] lg:max-w-[344px]">
                         Longer sentence, for just two lines and it could be very very long
                     </p>
-                    <div className="mt-[24px] flex justify-center md:justify-start lg:justify-start transform transition-transform duration-300 ease-in-out hover:scale-105">
-                        <button className="bg-white px-[32px] py-[16px] rounded-full text-[14px] sm:text-[14px] md:text-[14px] lg:text-[16px] font-medium text-bgForOrderBtn">
+                    <div className="mt-[24px] flex justify-center md:justify-start lg:justify-start  transform transition-transform duration-300 ease-in-out hover:scale-105  ">
+                        <button className="bg-white px-[32px] py-[16px] rounded-full text-[14px] leading-4 sm:text-[14px] md:text-[14px] lg:text-[16px] font-medium text-bgForOrderBtn">
                             Buy this bundle
                         </button>
                     </div>

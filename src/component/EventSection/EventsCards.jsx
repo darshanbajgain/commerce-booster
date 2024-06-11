@@ -22,7 +22,7 @@ const EventsCards = ({ event }) => {
                         {event.desc}
                     </p>
                 </div>
-                <button className="mx-2 mb-[26px] text-[14px]  text-bgForOrderBtn px-7 py-3 border-bgForOrderBtn hover:text-gray-500 hover:border-gray-500 border-2 rounded-full self-start">
+                <button className="mx-2 mb-[26px] text-[14px] lg:text-[16px] leading-4 font-[500]  text-bgForOrderBtn px-7 py-3 border-bgForOrderBtn hover:text-gray-500 hover:border-gray-500 border-2 rounded-full self-start">
                     Know more
                 </button>
             </div>
