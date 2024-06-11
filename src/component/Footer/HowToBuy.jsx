@@ -12,7 +12,7 @@ const HowToBuy = ({ title, children }) => {
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <h3
-                    className={`font-bold cursor-pointer text-[16px] lg:text-[20px] ${isOpen ? 'text-bgForOrderBtn' : 'text-black'}`}
+                    className={`font-bold cursor-pointer lg:text-black text-[16px] lg:text-[20px] ${isOpen ? 'text-bgForOrderBtn' : 'text-black'}`}
                 >
                     {title}
                 </h3>
