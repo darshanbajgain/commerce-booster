@@ -39,8 +39,8 @@ const Cards = ({ product }) => {
                 <div className={`absolute bg-white bottom-2 left-2 text-[10px] lg:text-[14px] mt-1 shadow-sm px-[8px] py-[2px] rounded-md ${product.expiry ? 'text-red-500' : 'text-instock'}`}>
                     <div className="flex w-full flex-row space-x-1 items-center justify-between">
                         <span>
-                            <img className={`w-[6.67px] h-[7.11] lg:w-[16px] lg:h-auto ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
-                            <img className={`w-[6.67px] h-[7.11] lg:w-[16px] lg:h-auto ${product.expiry ? 'inline-block' : 'hidden'}`} src={cautionRed} />
+                            <img className={`w-[8px] h-[8.53] lg:w-[16px] lg:h-[16px] ${product.expiry ? 'hidden' : 'block'}`} src={checkIcon} />
+                            <img className={`w-[87px] h-[8.53] lg:w-[16px] lg:h-[16px] ${product.expiry ? 'inline-block' : 'hidden'}`} src={cautionRed} />
                         </span>
                         <span>{product.expiry ? product.expiry : product.stockStatus}</span>
                     </div>
