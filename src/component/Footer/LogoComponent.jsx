@@ -27,9 +27,9 @@ const LogoComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="lg:hidden flex gap-x-2 items-center justify-center p-1">
+            <div className="lg:hidden flex gap-x-2 items-center justify-center p-1 ">
                 <img className="w-5 h-5" alt="copyright" src={copyRightLogo} />
-                <span className="text-[14px] mb-4 text-gray-700">
+                <span className="text-[14px] mb-4 text-gray-700 mt-4">
                     2021 Divante S.A.
                 </span>
             </div>
