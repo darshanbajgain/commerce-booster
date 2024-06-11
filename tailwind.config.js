@@ -22,9 +22,12 @@ export default {
         adBox: '#2580FF',
         bgForFooter: '#F6F8FB',
         footerBorder: '#EAECEE',
+        bodycolor: '#0C0C0C',
+
       },
-      fontSize: {
-        xss: '10px'
+      fontFamily: {
+        baiserCircle: ['Basier Circle', 'sans-serif'],
+        baiserSquare: ['Basier Square', 'sans-serif'],
       },
     },
   },

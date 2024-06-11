@@ -11,7 +11,7 @@ import ShippingDeliveryUI from "./component/ShippingUI/ShippingDeliveryUI";
 
 export default function App() {
   return (
-    <div>
+    <div className="font-baiserSquare font-normal">
       <Header />
       <RecommendedProduct />
       <AdvertiseBox/>

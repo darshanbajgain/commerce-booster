@@ -105,7 +105,7 @@ const RecommenedProduct = () => {
                 <img src={arrowForwarBlack} className="w-[17.45px] h-[17.45px]" />
             </div>
 
-            <h1 className="lg:text-left text-center pb-1 pt-6 text-[24px] lg:text-[28px] font-[700] lg:mt-3 lg:mb-[34px]">Recommended products</h1>
+            <h1 className="lg:text-left font-baiserCircle font-[700] text-center pb-1 pt-6 text-[24px] lg:text-[28px] lg:mt-3 lg:mb-[34px]">Recommended products</h1>
 
             <div className="container flex flex-col lg:h-[716px]">
 
