@@ -10,7 +10,7 @@ import MenuBarDesktop from './MenuBarDesktop';
 const Header = () => {
     return (
         <header className='flex flex-col bg-bgForHeader'>
-            <div className="hidden lg:flex justify-between items-center py-2 lg:px-[44px] xl:px-[88px] text-sm">
+            <div className="hidden lg:flex justify-between items-center py-2 lg:px-[44px] xl:px-[88px] text-sm ">
                 <DropDown />
                 <Details />
             </div>
