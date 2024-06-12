@@ -1,5 +1,5 @@
 
-import CommonLink from "../CommonLink/CommonLink"
+import CommonLink from "../CommonComponents/CommonLink"
 import HintsCards from "./HintsCards";
 import img1 from "../../assets/hints_assests/image.png";
 import img2 from "../../assets/hints_assests/image-1.png";

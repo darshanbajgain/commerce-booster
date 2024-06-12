@@ -2,7 +2,7 @@ import solarPanel from "../../assets/recommended_category/solar.png";
 import bulb from "../../assets/recommended_category/bulb.png";
 import cellPhone from "../../assets/recommended_category/cellphone.png";
 import fan from "../../assets/recommended_category/fan.png";
-import CommonLink from "../CommonLink/CommonLink";
+import CommonLink from "../CommonComponents/CommonLink";
 
 const RecommendedCategory = () => {
   const linkmessage = "Show all categories";

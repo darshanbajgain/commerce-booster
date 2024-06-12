@@ -2,7 +2,7 @@ import Cards from "./Cards"
 import productImage1 from "../../assets/recommended_section/product-image-1.png";
 import productImage2 from "../../assets/recommended_section/product-image-2.png";
 import arrowForwarBlack from "../../assets/recommended_section/arrowforward.svg"
-import CommonLink from "../CommonLink/CommonLink";
+import CommonLink from "../CommonComponents/CommonLink";
 import { useEffect, useState } from "react";
 
 const RecommenedProduct = () => {

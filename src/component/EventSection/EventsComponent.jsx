@@ -1,5 +1,5 @@
 import EventsCards from "./EventsCards"
-import CommonLink from "../CommonLink/CommonLink"
+import CommonLink from "../CommonComponents/CommonLink"
 import ecCourse from "../../assets/events_assets/electriancourse.png"
 import interiorDesign from "../../assets/events_assets/interiordesign.png"
 import paveEng from "../../assets/events_assets/paveengineering.png"

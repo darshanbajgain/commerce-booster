@@ -1,6 +1,6 @@
 import mainLogo from "../../assets/header_assets/logotype.svg";
 import MenuIcon from '../../assets/header_assets/menu.svg';
-import Cart from './Cart';
+import Cart from '../CommonComponents/Cart';
 import SearchBar from './SearchBar';
 
 import DropDown from './DropDown';
