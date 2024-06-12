@@ -8,13 +8,16 @@ import cautionRed from "../../assets/recommended_section/cautionred.png";
 import arrowDown from "../../assets/recommended_section/arrowdown.svg";
 import arrowDownBlue from "../../assets/recommended_section/arrowndownblue.svg";
 import blueArrowDown from "../../assets/recommended_section/bluevarrow.svg";
+import { useCart } from "../../context/CartContext";
 
 const Cards = ({ product }) => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
+  const {addToCart} = useCart();
 
   const handleAddToCart = () => {
     if (!product.expiry) {
       setIsAddedToCart(true);
+      addToCart();
     }
   };
 
