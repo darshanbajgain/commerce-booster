@@ -22,7 +22,7 @@ const Cards = ({ product }) => {
     <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]  transform transition-transform duration-300 ease-in-out hover:scale-105 ">
       <div className=" md:w-full md:h-auto relative">
         <img src={product.image} alt="Product" className="w-full" />
-        <span className="absolute top-2 left-0 bg-cardDiscountColor text-white text-[10px] lg:text-[14px] font-[400] lg:font-[600] p-[4px] flex items-center justify-center">
+        <span className="absolute top-2 left-0 bg-cardDiscountColor text-white text-[10px] md:text-[14px] font-[400] md:font-[600] p-[4px] flex items-center justify-center">
           {product.discount}
         </span>
         <span className="absolute top-2 right-2 bg-cardStarColor rounded-full px-1 py-1">
@@ -70,9 +70,9 @@ const Cards = ({ product }) => {
       <div className="text-gray-500 m-[8px] text-[14px] ">
         {product.partNumber}
       </div>
-      <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px] lg:w-[285px]">
+      <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px]  md:w-[285px]">
         <h3
-          className="card-name font-baiserCircle text-[16px] lg:text-[20px] font-bold"
+          className="card-name font-baiserCircle text-[16px] md:text-[20px] font-bold"
           style={{
             overflow: "hidden",
             textOverflow: "ellipsis",
