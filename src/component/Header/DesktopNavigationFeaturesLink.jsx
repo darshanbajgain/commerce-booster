@@ -7,7 +7,7 @@ const DesktopNavigationFeaturesLink = () => {
       <div className="flex flex-col items-center mr-8">
         <div className="relative">
           <img src={CompareIcon} alt="Compare" className="w-[18px] h-[18px]" />
-          <span className="absolute -top-3 -right-2 text-[10px] bg-bgForCartPop w-[18px] h-[18px]  flex flex-col items-center rounded-full text-white ">
+          <span className="absolute -top-2 -right-3 text-[10px] bg-bgForCartPop w-[18px] h-[18px]  flex flex-col items-center rounded-full text-white ">
             <p className="leading-[14px] my-auto mx-auto">3</p>
           </span>
         </div>
@@ -15,8 +15,8 @@ const DesktopNavigationFeaturesLink = () => {
       </div>
       <div className="flex flex-col items-center mr-5">
         <div className="relative">
-          <img src={FavoritesIcon} alt="Favorites" className="w-[18px] h-[18px]" />
-          <span className="absolute -top-3 -right-2 text-[10px] bg-bgForCartPop w-[18px] h-[18px] flex flex-col items-center rounded-full text-white ">
+          <img src={FavoritesIcon} alt="Favorites" className="w-[18px] h-[19px]" />
+          <span className="absolute -top-2 -right-3 text-[10px] bg-bgForCartPop w-[18px] h-[18px] flex flex-col items-center rounded-full text-white ">
           <p className="leading-[14px] my-auto mx-auto">7</p>
           </span>
         </div>
@@ -25,7 +25,7 @@ const DesktopNavigationFeaturesLink = () => {
       <div className="flex flex-col items-center w-[116px] relative">
         <div className="relative">
           <img src={CartIcon} alt="Cart" className="w-[18px] h-[18px]" />
-          <span className="absolute -top-3 -right-2 text-[10px] bg-bgForCartPop w-[18px] h-[18px] flex flex-col items-center rounded-full text-white ">
+          <span className="absolute -top-2 -right-3 text-[10px] bg-bgForCartPop w-[18px] h-[18px] flex flex-col items-center rounded-full text-white ">
           <p className="leading-[14px] my-auto mx-auto">45</p>
           </span>
         </div>
