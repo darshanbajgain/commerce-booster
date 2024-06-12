@@ -26,7 +26,7 @@ const Header = () => {
                     <SearchBar />
                 </div>
                 <div className="hidden font-[500] lg:flex justify-center items-center hover:bg-white hover:text-bgForOrderBtn my-4 bg-bgForOrderBtn hover:border border-bgForOrderBtn rounded-full 
-                 text-center text-white h-[48px] text-[16px]  py-4 px-8">
+                 text-center text-white h-[48px] text-[16px] leading-4  py-4 px-8">
                     Quick Order Form
                 </div>
                 <div className="lg:hidden">

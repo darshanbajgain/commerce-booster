@@ -14,7 +14,7 @@ export default function App() {
     <div className="font-baiserSquare font-normal text-bodycolor">
       <Header />
       <RecommendedProduct />
-      <AdvertiseBox/>
+      <AdvertiseBox />
       <RecommendedCategory />
       <HintSection />
       <AdvertiseMiddleBox />
@@ -23,5 +23,5 @@ export default function App() {
       <EventsComponent />
       <Footer />
     </div>
-  )
+  );
 }

@@ -8,6 +8,7 @@ import LogoComponent from "./LogoComponent";
 const Footer = () => {
 
     return (
+        
         <div className="mt-[64px] bg-bgForFooter lg:px-[88px] pt-[8px]">
             <div className="flex flex-col lg:flex-row gap-x-16">
                 <SignUpCard />
