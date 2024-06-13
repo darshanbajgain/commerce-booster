@@ -1,3 +1,20 @@
+@import "./assets/font.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* recommended card section: product name pargaraph dynamic text-overflow  */
+@media (min-width: 728px) {
+    .card-name {
+      -webkit-line-clamp: 2; /* Number of lines to show before truncating */
+      max-height: 52px; /* For desktop, 2 lines assuming line-height is 1.2em */
+    }
+  }
+  @media (max-width: 728px) {
+    .card-name {
+      -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+      max-height: 63px; /* For desktop, 2 lines assuming line-height is 1.2em */
+    }
+  }

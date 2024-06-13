@@ -1,13 +1,13 @@
-import AdBoxes from "../component/AdBoxes/AdBoxes";
-import AdvertiseBox from "../component/AdvertiseBox/AdvertiseBox";
-import AdvertiseMiddleBox from "../component/AdvertiseBoxMiddle/AdvertiseMiddleBox";
-import EventsComponent from "../component/EventSection/EventsComponent";
-import Footer from "../component/Footer/Footer";
-import Header from "../component/Header/Header";
-import HintSection from "../component/HintSection/HintSection";
-import RecommendedCategory from "../component/RecommendedCategory/RecommendedCategory";
-import RecommendedProduct from "../component/RecommendedProducts/RecommenedProduct";
-import ShippingDeliveryUI from "../component/ShippingUI/ShippingDeliveryUI";
+import AdBoxes from "../component/LandingPageComponent/AdBoxes/AdBoxes";
+import AdvertiseBox from "../component/LandingPageComponent/AdvertiseBox/AdvertiseBox";
+import AdvertiseMiddleBox from "../component/LandingPageComponent/AdvertiseBoxMiddle/AdvertiseMiddleBox";
+import EventsComponent from "../component/LandingPageComponent/EventSection/EventsComponent";
+import Footer from "../component/LandingPageComponent/Footer/Footer";
+import Header from "../component/LandingPageComponent/Header/Header";
+import HintSection from "../component/LandingPageComponent/HintSection/HintSection";
+import RecommendedCategory from "../component/LandingPageComponent/RecommendedCategory/RecommendedCategory";
+import RecommendedProduct from "../component/LandingPageComponent/RecommendedProducts/RecommenedProduct";
+import ShippingDeliveryUI from "../component/LandingPageComponent/ShippingUI/ShippingDeliveryUI";
 
 const LandingPage = () => {
   return (
