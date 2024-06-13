@@ -8,7 +8,7 @@ const Details = () => {
     <div className="flex gap-x-4">
       <div className="flex items-center">
         <img src={PhoneLogo} alt="Phone" className="w-4 h-4 mr-[5px]" />
-        <span className="text-PhoneColor font-bold">+32 (0) 16 29 76 67</span>
+        <span className="text-phoneColor font-bold">+32 (0) 16 29 76 67</span>
       </div>
       <div className="flex items-center">
         <span className=" border-l border-bodycolor h-[28px]"></span>
