@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Photovoltaics",
+    "image": "/assets/recommended_category/solar.png"
+  },
+  {
+    "id": "2",
+    "name": "Electronics",
+    "image": "/assets/recommended_category/bulb.png"
+  },
+  {
+    "id": "3",
+    "name": "Light Sources",
+    "image": "/assets/recommended_category/cellphone.png"
+  },
+  {
+    "id": "4",
+    "name": "Ventilation and Heating",
+    "image": "/assets/recommended_category/fan.png"
+  }
+]

@@ -5,7 +5,7 @@ import Cards from "./Cards";
 // import productImage2 from "../../../assets/recommended_section/product-image-2.png";
 import arrowForwarBlack from "/assets/recommended_section/arrowforward.svg";
 
-import CommonLink from "../CommonComponents/CommonLink";
+import CommonLink from "../SharedComponents/CommonLink";
 
 import { useEffect, useState } from "react";
 

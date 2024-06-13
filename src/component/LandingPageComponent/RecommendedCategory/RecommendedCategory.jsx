@@ -1,34 +1,38 @@
-import solarPanel from "/assets/recommended_category/solar.png";
-import bulb from "/assets/recommended_category/bulb.png";
-import cellPhone from "/assets/recommended_category/cellphone.png";
-import fan from "/assets/recommended_category/fan.png";
-import CommonLink from "../CommonComponents/CommonLink";
+// import images
+// import solarPanel from "/assets/recommended_category/solar.png";
+// import bulb from "/assets/recommended_category/bulb.png";
+// import cellPhone from "/assets/recommended_category/cellphone.png";
+// import fan from "/assets/recommended_category/fan.png";
+// import json data  for this category product section
+import electricProducts from "../../../utils/RecommendedCategory.json";
+
+import CommonLink from "../SharedComponents/CommonLink";
 
 const RecommendedCategory = () => {
   const linkmessage = "Show all categories";
 
-  const electricProducts = [
-    {
-      id: "1",
-      name: "Photovoltaics",
-      image: solarPanel
-    },
-    {
-      id: "2",
-      name: "Electronics",
-      image: cellPhone
-    },
-    {
-      id: "3",
-      name: "Light Sources",
-      image: bulb
-    },
-    {
-      id: "4",
-      name: "Ventilation and Heating",
-      image: fan
-    }
-  ]
+  // const electricProducts = [
+  //   {
+  //     id: "1",
+  //     name: "Photovoltaics",
+  //     image: solarPanel
+  //   },
+  //   {
+  //     id: "2",
+  //     name: "Electronics",
+  //     image: cellPhone
+  //   },
+  //   {
+  //     id: "3",
+  //     name: "Light Sources",
+  //     image: bulb
+  //   },
+  //   {
+  //     id: "4",
+  //     name: "Ventilation and Heating",
+  //     image: fan
+  //   }
+  // ]
   return (
     <div className="flex flex-col  mt-16 relative">
       <div className="hidden lg:block absolute right-20 top-0">
