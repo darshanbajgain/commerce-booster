@@ -11,22 +11,18 @@ import blueArrowDown from "/assets/recommended_section/bluevarrow.svg";
 import { useCart } from "../../../context/CartContext";
 
 const Cards = ({ product }) => {
-
   const [isAddedToCart, setIsAddedToCart] = useState(false);
 
-  const {addToCart} = useCart();
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    
     if (!product.expiry) {
       setIsAddedToCart(true);
       addToCart();
     }
-
   };
 
   return (
-
     <div className="bg-white rounded-lg shadow-sm w-full max-w-[301px]  transform transition-transform duration-300 ease-in-out hover:scale-105 ">
       <div className=" md:w-full md:h-auto relative">
         <img src={product.image} alt="Product" className="w-full" />
@@ -79,19 +75,9 @@ const Cards = ({ product }) => {
         {product.partNumber}
       </div>
       <div className="text-wrap m-[8px] w-[148px] h-[63px] lg:h-[52px]  md:w-[285px]">
-        <h3
-          className="card-name font-baiserCircle text-[16px] md:text-[20px] font-bold"
-          style={{
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            lineHeight: "1.2em",
-          }}
-        >
+        <h3 className=" line-clamp-3 md:line-clamp-2 font-baiserCircle text-[16px] md:text-[20px] font-bold">
           {product.name}
         </h3>
-       
       </div>
 
       <ul className="hidden my-3 mx-2 md:flex flex-col">

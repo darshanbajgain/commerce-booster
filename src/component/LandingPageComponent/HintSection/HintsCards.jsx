@@ -11,16 +11,7 @@ const HintsCards = ({ hint }) => {
           <h3 className="font-bold font-baiserCircle py-4 px-2">
             {hint.title}
           </h3>
-          <p
-            className="px-2 text-wrap"
-            style={{
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              display: "-webkit-box",
-              WebkitLineClamp: 3 /* Number of lines to show before truncating */,
-              WebkitBoxOrient: "vertical",
-            }}
-          >
+          <p className="px-2 text-wrap line-clamp-3">
             {hint.description}
           </p>
         </div>
