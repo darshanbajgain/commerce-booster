@@ -1,43 +1,45 @@
-import CommonLink from "../CommonComponents/CommonLink";
+import CommonLink from "../SharedComponents/CommonLink";
 import HintsCards from "./HintsCards";
-import img1 from "../../../assets/hints_assests/image.png";
-import img2 from "../../../assets/hints_assests/image-1.png";
-import img3 from "../../../assets/hints_assests/image-2.png";
-import img4 from "../../../assets/hints_assests/image-3.png";
+import img1 from "/assets/hints_assests/image.png";
+import img2 from "/assets/hints_assests/image-1.png";
+import img3 from "/assets/hints_assests/image-2.png";
+import img4 from "/assets/hints_assests/image-3.png";
+import hintsData from "../../../utils/HintsData.json";
+
 
 const HintSection = () => {
   const messageLink = "Show all hints";
 
-  const hints = [
-    {
-      id: 1,
-      title: "How much does it cost to finish an apartment?",
-      description:
-        'Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye hy hello how are you what to do in this bla bla testing ellipisi',
-      image: img1,
-    },
-    {
-      id: 2,
-      title: "Demolition of the load-bearing wall",
-      description:
-        "Are you planning a home renovation or renovation? Your vision is limited by the load-bearing wall, which you",
-      image: img2,
-    },
-    {
-      id: 3,
-      title: "What color to paint a hall in a block of flats?",
-      description:
-        "Matching the right paint is a real challenge. If you are wondering what color to paint your hall with, you can",
-      image: img3,
-    },
-    {
-      id: 4,
-      title: "How does a concrete pump work?",
-      description:
-        "A concrete pump is currently one of the most common equipment used on construction sites. Its operation",
-      image: img4,
-    },
-  ];
+  // const hints = [
+  //   {
+  //     id: 1,
+  //     title: "How much does it cost to finish an apartment?",
+  //     description:
+  //       'Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye hy hello how are you what to do in this bla bla testing ellipisi',
+  //     image: img1,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Demolition of the load-bearing wall",
+  //     description:
+  //       "Are you planning a home renovation or renovation? Your vision is limited by the load-bearing wall, which you",
+  //     image: img2,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "What color to paint a hall in a block of flats?",
+  //     description:
+  //       "Matching the right paint is a real challenge. If you are wondering what color to paint your hall with, you can",
+  //     image: img3,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "How does a concrete pump work?",
+  //     description:
+  //       "A concrete pump is currently one of the most common equipment used on construction sites. Its operation",
+  //     image: img4,
+  //   },
+  // ];
 
   return (
     <div className="flex flex-col mt-16 relative">
@@ -48,7 +50,7 @@ const HintSection = () => {
         Hints for you
       </h1>
       <div className="grid grid-cols-1 gap-4 px-4 lg:px-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-1">
-        {hints.map((hint) => (
+        {hintsData.map((hint) => (
           <HintsCards key={hint.id} hint={hint} />
         ))}
       </div>

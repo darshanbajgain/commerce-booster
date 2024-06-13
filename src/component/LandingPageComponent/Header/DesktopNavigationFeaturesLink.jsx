@@ -1,6 +1,6 @@
-import Cart from "../CommonComponents/Cart";
-import Compare from "../CommonComponents/Compare";
-import Favourite from "../CommonComponents/Favourite";
+import Cart from "../SharedComponents/Cart";
+import Compare from "../SharedComponents/Compare";
+import Favourite from "../SharedComponents/Favourite";
 
 const DesktopNavigationFeaturesLink = () => {
   return (

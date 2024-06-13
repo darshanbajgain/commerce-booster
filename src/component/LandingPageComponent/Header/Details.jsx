@@ -1,7 +1,7 @@
-import MailLogo from "../../../assets/header_assets/mail.svg";
-import UserLogo from "../../../assets/header_assets/user.svg";
-import PhoneLogo from "../../../assets/header_assets/phone.svg";
-import DropDownLogo from "../../../assets/header_assets/arrowdown.svg";
+import MailLogo from "/assets/header_assets/mail.svg";
+import UserLogo from "/assets/header_assets/user.svg";
+import PhoneLogo from "/assets/header_assets/phone.svg";
+import DropDownLogo from "/assets/header_assets/arrowdown.svg";
 
 const Details = () => {
   return (

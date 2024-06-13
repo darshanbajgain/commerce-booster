@@ -1,4 +1,4 @@
-import CartIcon from "../../../assets/header_assets/cart/cart.svg";
+import CartIcon from "/assets/header_assets/cart/cart.svg";
 import { useCart } from "../../../context/CartContext";
 
 const Cart = () => {

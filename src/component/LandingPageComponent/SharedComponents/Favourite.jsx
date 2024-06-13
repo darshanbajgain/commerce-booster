@@ -1,4 +1,4 @@
-import FavoritesIcon from "../../../assets/header_assets/star.svg";
+import FavoritesIcon from "/assets/header_assets/star.svg";
 
 const Favourite = () => {
   return (

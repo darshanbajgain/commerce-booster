@@ -1,72 +1,79 @@
 import Cards from "./Cards";
-import productImage1 from "../../../assets/recommended_section/product-image-1.png";
-import productImage2 from "../../../assets/recommended_section/product-image-2.png";
-import arrowForwarBlack from "../../../assets/recommended_section/arrowforward.svg";
-import CommonLink from "../CommonComponents/CommonLink";
+
+//import images
+// import productImage1 from "../../../assets/recommended_section/product-image-1.png";
+// import productImage2 from "../../../assets/recommended_section/product-image-2.png";
+import arrowForwarBlack from "/assets/recommended_section/arrowforward.svg";
+
+import CommonLink from "../SharedComponents/CommonLink";
+
 import { useEffect, useState } from "react";
+
+//import Products Json Data
+import productsData from "../../../utils/ProductsData.json";
 
 const RecommenedProduct = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   //pass products
-  const products = [
-    {
-      id: 1,
-      discount: "-30%",
-      stockStatus: "In stock",
-      partNumber: "Omnires | Part No. 2123532",
-      name: "Connection with a handle Omnire round, best product, best buy example text long example text to test dot dot feature",
-      feat1: "Material of execution: brass",
-      feat2: "Manufacturer`s color: chrome",
-      feat3: "Guarantee: 5 years",
-      price: "45.00",
-      originalPrice: "55.00",
-      image: productImage1,
-    },
+  // const productsData = [
+  //   {
+  //     id: 1,
+  //     discount: "-30%",
+  //     stockStatus: "In stock",
+  //     partNumber: "Omnires | Part No. 2123532",
+  //     name: "Connection with a handle Omnire round, best product, best buy example text long example text to test dot dot feature",
+  //     feat1: "Material of execution: brass",
+  //     feat2: "Manufacturer`s color: chrome",
+  //     feat3: "Guarantee: 5 years",
+  //     price: "45.00",
+  //     originalPrice: "55.00",
+  //     image: productImage1,
+  //   },
 
-    {
-      id: 2,
-      discount: "-30%",
-      stockStatus: "In stock",
-      partNumber: "GoodHome | Part No. 2123532",
-      name: "Countertop washbasin GoodHome Tekapo",
-      feat1: "Basin width : 45 cm",
-      feat2: "Basin height: 12 cm",
-      feat3: "Basin depth: 35 cm",
-      price: "51.00",
-      originalPrice: "64.00",
-      image: productImage2,
-    },
+  //   {
+  //     id: 2,
+  //     discount: "-30%",
+  //     stockStatus: "In stock",
+  //     partNumber: "GoodHome | Part No. 2123532",
+  //     name: "Countertop washbasin GoodHome Tekapo",
+  //     feat1: "Basin width : 45 cm",
+  //     feat2: "Basin height: 12 cm",
+  //     feat3: "Basin depth: 35 cm",
+  //     price: "51.00",
+  //     originalPrice: "64.00",
+  //     image: productImage2,
+  //   },
 
-    {
-      id: 3,
-      discount: "-30%",
-      stockStatus: "In stock",
-      partNumber: "GoodHome | Part No. 2123532",
-      name: "Perforated Simpson tape 25 x 2500 x 2 mm",
-      feat1: "Basin width : 45 cm",
-      feat2: "Basin height: 12 cm",
-      feat3: "Basin depth: 35 cm",
-      price: "51.00",
-      originalPrice: "64.00",
-      image: productImage1,
-    },
+  //   {
+  //     id: 3,
+  //     discount: "-30%",
+  //     stockStatus: "In stock",
+  //     partNumber: "GoodHome | Part No. 2123532",
+  //     name: "Perforated Simpson tape 25 x 2500 x 2 mm",
+  //     feat1: "Basin width : 45 cm",
+  //     feat2: "Basin height: 12 cm",
+  //     feat3: "Basin depth: 35 cm",
+  //     price: "51.00",
+  //     originalPrice: "64.00",
+  //     image: productImage1,
+  //   },
 
-    {
-      id: 4,
-      discount: "-30%",
-      stockStatus: "In stock",
-      expiry: "Exp. delivery on Jun 14, 2022",
-      partNumber: "Omnires | Part No. 2123532",
-      name: "AMBER DECOR Bulb 60W,   E27 590",
-      feat1: "Basin width : 45 cm",
-      feat2: "Basin height: 12 cm",
-      feat3: "Basin depth: 35 cm",
-      price: "51.00",
-      originalPrice: "64.00",
-      image: productImage1,
-    },
-  ];
+  //   {
+  //     id: 4,
+  //     discount: "-30%",
+  //     stockStatus: "In stock",
+  //     expiry: "Exp. delivery on Jun 14, 2022",
+  //     partNumber: "Omnires | Part No. 2123532",
+  //     name: "AMBER DECOR Bulb 60W,   E27 590",
+  //     feat1: "Basin width : 45 cm",
+  //     feat2: "Basin height: 12 cm",
+  //     feat3: "Basin depth: 35 cm",
+  //     price: "51.00",
+  //     originalPrice: "64.00",
+  //     image: productImage1,
+  //   },
+  // ];
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -77,11 +84,11 @@ const RecommenedProduct = () => {
   // Determine the number of cards to display accroding to device size
   let cardsToDisplay;
   if (windowWidth < 1024) {
-    cardsToDisplay = products.slice(0, 2);
+    cardsToDisplay = productsData.slice(0, 2);
   } else if (windowWidth < 1400) {
-    cardsToDisplay = products.slice(0, 3);
+    cardsToDisplay = productsData.slice(0, 3);
   } else {
-    cardsToDisplay = products;
+    cardsToDisplay = productsData;
   }
 
   //pass message
