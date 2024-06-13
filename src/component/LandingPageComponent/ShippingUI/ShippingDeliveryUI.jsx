@@ -1,4 +1,4 @@
-import DPDImage from "../../../assets/delivery_van/dpdVan.png";
+import DPDImage from "/assets/delivery_van/dpdVan.png";
 
 const ShippingDeliveryUI = () => {
   return (

@@ -1,4 +1,4 @@
-import CompareIcon from "../../../assets/header_assets/compare.svg";
+import CompareIcon from "/assets/header_assets/compare.svg";
 
 const Compare = () => {
   return (

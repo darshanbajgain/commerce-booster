@@ -1,4 +1,4 @@
-import drillMachine from "../../../assets/advertisement_assests/drill.png";
+import drillMachine from "/assets/advertisement_assests/drill.png";
 
 const AdvertiseBox = () => {
   return (

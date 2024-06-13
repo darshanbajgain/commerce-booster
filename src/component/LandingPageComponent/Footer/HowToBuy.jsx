@@ -1,6 +1,6 @@
 import { useState } from "react";
-import arrowUp from "../../../assets/footer_assets/keyboard_arrow_up.svg";
-import arrowDown from "../../../assets/footer_assets/keyboard_arrow_down.svg";
+import arrowUp from "/assets/footer_assets/keyboard_arrow_up.svg";
+import arrowDown from "/assets/footer_assets/keyboard_arrow_down.svg";
 
 const HowToBuy = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(true);

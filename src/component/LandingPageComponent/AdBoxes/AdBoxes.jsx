@@ -1,6 +1,6 @@
-import camPhone from "../../../assets/advertisement_assests/camephone.png";
-import screwDrvie from "../../../assets/advertisement_assests/screwdrive.png";
-import windMill from "../../../assets/advertisement_assests/windmill.png";
+import camPhone from "/assets/advertisement_assests/camephone.png";
+import screwDrvie from "/assets/advertisement_assests/screwdrive.png";
+import windMill from "/assets/advertisement_assests/windmill.png";
 import { AdCard } from "./AdCard";
 
 const AdBoxes = () => {

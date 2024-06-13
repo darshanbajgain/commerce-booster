@@ -1,4 +1,4 @@
-import DropDownLogo from "../../../assets/header_assets/arrowdown.svg";
+import DropDownLogo from "/assets/header_assets/arrowdown.svg";
 
 const DropDown = () => {
   return (

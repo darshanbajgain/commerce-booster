@@ -1,9 +1,9 @@
 import CommonLink from "../CommonComponents/CommonLink";
 import HintsCards from "./HintsCards";
-import img1 from "../../../assets/hints_assests/image.png";
-import img2 from "../../../assets/hints_assests/image-1.png";
-import img3 from "../../../assets/hints_assests/image-2.png";
-import img4 from "../../../assets/hints_assests/image-3.png";
+import img1 from "/assets/hints_assests/image.png";
+import img2 from "/assets/hints_assests/image-1.png";
+import img3 from "/assets/hints_assests/image-2.png";
+import img4 from "/assets/hints_assests/image-3.png";
 
 const HintSection = () => {
   const messageLink = "Show all hints";

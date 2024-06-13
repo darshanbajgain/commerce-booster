@@ -1,4 +1,4 @@
-import pointRightArrow from "../../../assets/recommended_section/rightarrow.svg";
+import pointRightArrow from "/assets/recommended_section/rightarrow.svg";
 
 const HintsCards = ({ hint }) => {
   const readlink = "Read more";

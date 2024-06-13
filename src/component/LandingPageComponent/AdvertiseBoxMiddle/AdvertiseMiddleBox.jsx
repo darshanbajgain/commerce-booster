@@ -1,4 +1,4 @@
-import rawimage from "../../../assets/advertisement_assests/rawmaterials.png";
+import rawimage from "/assets/advertisement_assests/rawmaterials.png";
 
 const AdvertiseMiddleBox = () => {
   return (

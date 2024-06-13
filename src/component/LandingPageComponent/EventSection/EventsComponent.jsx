@@ -1,9 +1,9 @@
 import EventsCards from "./EventsCards"
 import CommonLink from "../CommonComponents/CommonLink"
-import ecCourse from "../../../assets/events_assets/electriancourse.png"
-import interiorDesign from "../../../assets/events_assets/interiordesign.png"
-import paveEng from "../../../assets/events_assets/paveengineering.png"
-import autoCAD from "../../../assets/events_assets/autocad.png"
+import ecCourse from "/assets/events_assets/electriancourse.png"
+import interiorDesign from "/assets/events_assets/interiordesign.png"
+import paveEng from "/assets/events_assets/paveengineering.png"
+import autoCAD from "/assets/events_assets/autocad.png"
 
 const EventsComponent = () => {
 

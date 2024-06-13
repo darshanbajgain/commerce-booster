@@ -1,8 +1,8 @@
-import copyRightLogo from "../../../assets/footer_assets/logo/copyright.svg";
-import fbLogo from "../../../assets/footer_assets/logo/facebook.svg";
-import instaLogo from "../../../assets/footer_assets/logo/instagram.svg";
-import ytLogo from "../../../assets/footer_assets/logo/youtube.svg";
-import siteLogo from "../../../assets/footer_assets/logo/logotype.svg";
+import copyRightLogo from "/assets/footer_assets/logo/copyright.svg";
+import fbLogo from "/assets/footer_assets/logo/facebook.svg";
+import instaLogo from "/assets/footer_assets/logo/instagram.svg";
+import ytLogo from "/assets/footer_assets/logo/youtube.svg";
+import siteLogo from "/assets/footer_assets/logo/logotype.svg";
 
 const LogoComponent = () => {
   return (

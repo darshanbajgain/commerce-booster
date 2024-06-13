@@ -1,0 +1,57 @@
+
+[
+    {
+      "id": 1,
+      "discount": "-30%",
+      "stockStatus": "In stock",
+      "partNumber": "Omnires | Part No. 2123532",
+      "name": "Connection with a handle Omnire round, best product, best buy example text long example text to test dot dot feature",
+      "feat1": "Material of execution: brass",
+      "feat2": "Manufacturer`s color: chrome",
+      "feat3": "Guarantee: 5 years",
+      "price": "45.00",
+      "originalPrice": "55.00",
+      "image": "../assets/recommended_section/product-image-1.png"
+    },
+    {
+      "id": 2,
+      "discount": "-30%",
+      "stockStatus": "In stock",
+      "partNumber": "GoodHome | Part No. 2123532",
+      "name": "Countertop washbasin GoodHome Tekapo",
+      "feat1": "Basin width : 45 cm",
+      "feat2": "Basin height: 12 cm",
+      "feat3": "Basin depth: 35 cm",
+      "price": "51.00",
+      "originalPrice": "64.00",
+      "image": "../assets/recommended_section/product-image-2.png"
+    },
+    {
+      "id": 3,
+      "discount": "-30%",
+      "stockStatus": "In stock",
+      "partNumber": "GoodHome | Part No. 2123532",
+      "name": "Perforated Simpson tape 25 x 2500 x 2 mm",
+      "feat1": "Basin width : 45 cm",
+      "feat2": "Basin height: 12 cm",
+      "feat3": "Basin depth: 35 cm",
+      "price": "51.00",
+      "originalPrice": "64.00",
+      "image": "../assets/recommended_section/product-image-1.png"
+    },
+    {
+      "id": 4,
+      "discount": "-30%",
+      "stockStatus": "In stock",
+      "expiry": "Exp. delivery on Jun 14, 2022",
+      "partNumber": "Omnires | Part No. 2123532",
+      "name": "AMBER DECOR Bulb 60W, E27 590",
+      "feat1": "Basin width : 45 cm",
+      "feat2": "Basin height: 12 cm",
+      "feat3": "Basin depth: 35 cm",
+      "price": "51.00",
+      "originalPrice": "64.00",
+      "image": "../assets/recommended_section/product-image-2.png"
+    }
+  ]
+  
