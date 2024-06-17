@@ -5,10 +5,10 @@ import shareIcon from "/assets/recommended_section/share.svg";
 import checkIcon from "/assets/recommended_section/check.svg";
 import checkBlueIcon from "/assets/recommended_section/check-blue.svg";
 import cautionRed from "/assets/recommended_section/cautionred.png";
-import arrowDown from "/assets/recommended_section/arrowdown.svg";
-import arrowDownBlue from "/assets/recommended_section/arrowndownblue.svg";
 import blueArrowDown from "/assets/recommended_section/bluevarrow.svg";
 import { useCart } from "../../../context/CartContext";
+import AddToCartButton from "../SharedComponents/AddToCartButton";
+import UpdateCartButton from "../SharedComponents/UpdateCartButton";
 
 const Cards = ({ product }) => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
@@ -117,43 +117,12 @@ const Cards = ({ product }) => {
             </div>
           </div>
         </div>
-        <button
-          className={`mt-[8px] mb-2 text-sm font-[500] px-6 rounded-3xl w-full font-baiserSquare
-                    flex-row items-center justify-center  space-x-1 
-                    ${isAddedToCart ? "hidden" : "flex"}
-                    ${
-                      product.expiry
-                        ? "bg-white text-addToCartBtn border-addToCartBtn border-2 py-2 font-[400]"
-                        : "bg-addToCartBtn text-white hover:bg-blue-400 py-2 "
-                    }`}
-          onClick={handleAddToCart}
-        >
-          <span className="p-1 text-[14px]  lg:text-[16px] font-baiserSquare leading-4 ">
-            Add to cart
-          </span>
-          <span className="p-1">
-            <img
-              className={`${product.expiry ? "hidden" : "block"}`}
-              src={arrowDown}
-            />
-            <img
-              className={`${product.expiry ? "block" : "hidden"}`}
-              src={arrowDownBlue}
-            />
-          </span>
-        </button>
-        <button
-          className={`mt-[8px] mb-2 text-sm lg:text-[16px] font-[500] font-baiserSquare px-6 py-2 bg-addToCartBtn text-white rounded-3xl w-full flex flex-row items-center justify-center hover:bg-blue-400 space-x-1 ${
-            isAddedToCart ? "block" : "hidden"
-          }`}
-        >
-          <span className="p-1 text-[14px]  lg:text-[16px] leading-4 ">
-            Update Cart
-          </span>
-          <span className="p-1">
-            <img className="text-white" src={arrowDown} />
-          </span>
-        </button>
+        <AddToCartButton
+          handleAddToCart={handleAddToCart}
+          product={product}
+          isAddedToCart={isAddedToCart}
+        />
+        <UpdateCartButton isAddedToCart={isAddedToCart} />
       </div>
       <div
         className={`bg-blue-100 rounded-b-lg py-2 w-full flex-row gap-x-1 m-0 justify-center items-center ${
