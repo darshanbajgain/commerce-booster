@@ -18,7 +18,7 @@ const Cards = ({ product }) => {
   const handleAddToCart = () => {
     if (!product.expiry) {
       setIsAddedToCart(true);
-      addToCart();
+      addToCart(product);
     }
   };
 
