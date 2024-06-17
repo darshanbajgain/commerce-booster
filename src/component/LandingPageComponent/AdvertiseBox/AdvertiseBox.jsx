@@ -1,6 +1,9 @@
+import BasicCommonButton from "../SharedComponents/BasicCommonButton";
 import drillMachine from "/assets/advertisement_assests/drill.png";
 
 const AdvertiseBox = () => {
+  const buttonText = "Check offer";
+  console.log("this is a button text from ad component" + buttonText);
   return (
     <div className="bg-adBox mt-[64px] px-[16px] py-[24px] lg:py-[16px] lg:px-[88px] flex lg:flex-row lg:justify-between flex-col items-center">
       <div className="flex flex-col lg:flex-row items-center justify-center">
@@ -18,12 +21,8 @@ const AdvertiseBox = () => {
         </div>
       </div>
       <div className="mt-[24px] lg:mt-0">
-        <button
-          className=" bg-white px-[32px] py-[16px] rounded-full font-baiserSquare text-[14px] lg:text-[16px] font-medium text-bgForOrderBtn
-        transform transition-transform duration-300 ease-in-out hover:scale-105 leading-4 "
-        >
-          Check offer
-        </button>
+       
+        <BasicCommonButton buttonText={buttonText} />
       </div>
     </div>
   );

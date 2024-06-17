@@ -1,26 +1,39 @@
-import { useCart } from '../context/CartContext';
+import { useCart } from "../context/CartContext";
+import CartTable from "../component/CartPageComponent/CartTable";
+import OrderSummary from "../component/CartPageComponent/OrderSummary";
+import Header from "../component/LandingPageComponent/Header/Header";
+import Footer from "../component/LandingPageComponent/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
   const { cart } = useCart();
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Cart</h2>
-      {cart.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <ul>
-          {cart.map((product, index) => (
-            <li key={index} className="border-b py-2">
-              <img src={product.image} alt={product.name} className="w-16 h-16 mr-4 inline-block" />
-              <div className="inline-block align-middle">
-                <h3 className="text-lg">{product.name}</h3>
-                <p>${product.price}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="font-baiserSquare font-normal text-bodycolor">
+      <Header />
+
+      <h2 className="text-2xl  md:text-3xl  text-center font-bold m-6 p-4">Added Item Lists</h2>
+      <div className="min-h-56">
+        {cart.length === 0 ? (
+          <p className="text-center flex flex-col items-center">
+            Your cart is empty.
+            <Link className="text-phoneColor text-sm cursor-pointer" to="/">
+              Get products first
+            </Link>
+          </p>
+        ) : (
+          <div className="flex flex-col lg:justify-center lg:mx-[88px] lg:gap-x-16 my-6 p-6 items-center lg:flex-row lg:space-x-4">
+            <div className="w-full">
+              <CartTable />
+            </div>
+            <div className=" w-full lg:w-1/3 mt-4 lg:mt-0">
+              <OrderSummary />
+            </div>
+          </div>
+        )}
+      </div>
+
+      <Footer />
     </div>
   );
 };

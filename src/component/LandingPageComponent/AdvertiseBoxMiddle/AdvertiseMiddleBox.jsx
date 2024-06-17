@@ -1,6 +1,8 @@
+import BasicCommonButton from "../SharedComponents/BasicCommonButton";
 import rawimage from "/assets/advertisement_assests/rawmaterials.png";
 
 const AdvertiseMiddleBox = () => {
+  const buttonText = "Buy this bundle";
   return (
     <div className="flex flex-col px-4 lg:px-0 lg gap-y-2 mt-[64px] sm:mt-[32px] sm:flex-row sm:gap-y-4 md:mx-[40px] lg:mx-[88px] sm:gap-x-3 lg:gap-x-5  md:max-h-[300px] lg:max-h-[350px]">
       <div className="flex justify-center md:w-1/2">
@@ -19,9 +21,7 @@ const AdvertiseMiddleBox = () => {
             Longer sentence, for just two lines and it could be very very long
           </p>
           <div className="mt-[24px] flex justify-center md:justify-start lg:justify-start  transform transition-transform duration-300 ease-in-out hover:scale-105  ">
-            <button className="bg-white px-[32px] py-[16px] rounded-full text-[14px] leading-4 sm:text-[14px] md:text-[14px] lg:text-[16px] font-medium text-bgForOrderBtn">
-              Buy this bundle
-            </button>
+            <BasicCommonButton buttonText={buttonText} />
           </div>
         </div>
       </div>
